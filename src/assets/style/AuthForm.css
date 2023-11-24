@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.auth-label {
+    color: #7F7E83;
+    font-size: 20px;
+}
+
+.auth-form {
+    height: 52px;
+    background-color: #F4F4F4 !important;
+    border: solid #C0C0CA 1px !important;
+    font-size: 15px !important;
+    transition: 0.3s;
+}
+
+.auth-form:focus {
+    outline: none !important;
+    border-color: #654D39 !important;
+    border: solid #654D39 1px !important;
+    box-shadow: 0 0 2px #654D39 !important;
+}
+
+.auth-form::placeholder {
+    color: rgba(0, 0, 0, 0.5) !important
+
+
+}
