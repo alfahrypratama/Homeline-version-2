@@ -4,8 +4,8 @@ import React from 'react'
 import { Col, Container, Form, FormControl, Image, InputGroup, Nav, Row } from 'react-bootstrap'
 
 //Component
-import ContactUsForm from './ContactUsForm'
-import AuthButton from './AuthButton'
+import ContactUsForm from '../components/ContactUsForm'
+import AuthButton from '../components/AuthButton'
 
 //Style
 import '../assets/style/ContactUs.css'

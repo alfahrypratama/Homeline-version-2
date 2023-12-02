@@ -1,8 +1,8 @@
 import React from 'react'
 
 //Component
-import AuthForm from "./AuthForm"
-import AuthButton from './AuthButton'
+import AuthForm from "../components/AuthForm"
+import AuthButton from '../components/AuthButton'
 
 //Style
 import '../assets/style/Register.css'

@@ -1,15 +1,19 @@
 import React from 'react'
 import '../assets/style/Landingpage.css'
-import NavbarLanding from './NavbarLanding'
-import { Card, Col, Container, Image, Nav, Row, Dropdown, DropdownButton } from 'react-bootstrap'
+import NavbarLanding from '../components/NavbarLanding'
+import { Card, Col, Container, Image, Nav, Row, Dropdown, DropdownButton, Button } from 'react-bootstrap'
 import { HiOutlineChevronDown } from "react-icons/hi";
 import { IoBedOutline } from "react-icons/io5";
 import { LuBath } from "react-icons/lu";
 import { MdOutlineSpaceDashboard } from "react-icons/md";
-import LandingBtn from './LandingBtn';
-import LandingBtn2 from './LandingBtn2';
-import LandingBtn3 from './LandingBtn3';
-import CardAbout from './CardAbout';
+import LandingBtn from '../components/LandingBtn';
+import LandingBtn2 from '../components/LandingBtn2';
+import LandingBtn3 from '../components/LandingBtn3';
+import CardAbout from '../components/CardAbout';
+import LandingBtn4 from '../components/LandingBtn4';
+import CardHouse from '../components/CardHouse';
+import Footer from '../components/Footer';
+import NavbarUser from '../components/NavbarUser';
 
 export default function Landingpage() {
     return (
@@ -108,9 +112,47 @@ export default function Landingpage() {
                                 <MdOutlineSpaceDashboard /> <span className='fw-semibold'>123</span> m<sup>2</sup>
                             </Col>
                         </Row>
+                        <Row>
+                            <LandingBtn4 />
+                        </Row>
                     </Card>
                 </Col>
             </Nav>
+
+            <Container>
+                <Nav className='mt-5 justify-content-center fw-bold fs-3'>Pilihan Terbaik Untukmu</Nav>
+                <Row className='mt-5'>
+                    <Col className='d-flex justify-content-between'>
+                        <CardHouse />
+                        <CardHouse />
+                        <CardHouse />
+                    </Col>
+                </Row>
+            </Container>
+
+            <Container className='mb-5'>
+                <Row className='d-flex justify-content-center align-items-center'>
+                    <Col xs={8} className=''>
+                        <Nav className="fs-3 fw-bold">Tentang Kami</Nav>
+                        <Nav className='text-justify mt-3'>
+                            Selamat datang di Homeline, sebuah platform yang menyediakan informasi seputar hunian inovatif. Kami didirikan dengan tujuan membantu masyarakat mendapatkan akses mudah, terjangkau, dan efisien ke hunian yang nyaman dan sesuai dengan kebutuhan. Tim kami yang berdedikasi selalu siap memberikan bantuan dan informasi yang dibutuhkan. Kami percaya bahwa setiap orang berhak atas tempat tinggal yang nyaman, aman, dan sesuai dengan gaya hidup mereka.
+                        </Nav>
+                    </Col>
+                    <Col xs={4} className='justify-content-end d-flex'>
+                        <Image src='/images/Logo2.png' className='w-75' />
+                    </Col>
+                </Row>
+            </Container>
+
+            <Nav className='exp-section-2'>
+                <Container className='d-flex flex-column text-center align-items-center justify-content-center'>
+                        <Nav className='fs-2 fw-bold'>Pilih Rumah Ternyamanmu</Nav>
+                        <Nav className='mt-3'>Jadikan setiap detik dan sudut rumahmu berharga dan mengesankan.</Nav>
+                        <Button variant="outline-light" className='mt-3 ps-4 pt-2 pe-4 pb-2 rounded-5'>Hubungi Kami</Button>
+                </Container>
+            </Nav>
+            
+            <Footer />
         </>
     )
 }

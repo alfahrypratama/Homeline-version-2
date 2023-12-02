@@ -2,10 +2,11 @@
 
 //Route
 import { Route, Routes } from "react-router-dom"
-import Login from "./components/Login"
-import Register from "./components/Register"
-import ContactUs from "./components/ContactUs"
-import Landingpage from "./components/Landingpage"
+import Login from "./pages/Login"
+import Register from "./pages/Register"
+import ContactUs from "./pages/ContactUs"
+import Landingpage from "./pages/Landingpage"
+import Homepage from "./pages/Homepage"
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path="/login" element={<Login />}/>
       <Route path="/register" element={<Register />}/>
       <Route path="/contact-us" element={<ContactUs />}/>
+      <Route path="/homepage" element={<Homepage />}/>
     </Routes>
     </>
   )

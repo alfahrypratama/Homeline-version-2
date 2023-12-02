@@ -1,0 +1,8 @@
+.price-btn {
+    background-color: #969593 !important;
+    border-radius: 4px 4px 20px 4px !important;
+    border: none !important;
+    border-bottom: 4px solid #918675 !important;
+    color: black !important;
+    font-size: 12px !important;
+}

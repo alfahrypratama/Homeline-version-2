@@ -60,6 +60,13 @@ body {
     margin-top: 100px;
 }
 
+.exp-section-2 {
+    background-image: url('/images/bglanding2.jpg');
+    background-repeat: no-repeat;
+    height: 308.05px;
+    color: white;
+}
+
 .exp-img {
     width: 30%;
     border-radius: 50px !important;
@@ -67,7 +74,7 @@ body {
 
 .exp-card {
     width: 550px !important;
-    height: 300px !important;
+    height: 350px !important;
     border-radius: 0px 50px 50px 0px !important;
 }
 
@@ -78,4 +85,8 @@ body {
 
 .text-detail {
     font-size: 12px;
+}
+
+.text-justify {
+    text-align: justify;
 }
