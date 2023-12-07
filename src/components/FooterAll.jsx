@@ -4,7 +4,7 @@ import { Col, Container, Nav, Row } from 'react-bootstrap'
 import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 
-export default function Footer() {
+export default function FooterAll() {
     return (
         <>
             <Nav className='background'>

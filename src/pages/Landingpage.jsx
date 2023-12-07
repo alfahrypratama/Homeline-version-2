@@ -1,19 +1,19 @@
 import React from 'react'
 import '../assets/style/Landingpage.css'
 import NavbarLanding from '../components/NavbarLanding'
-import { Card, Col, Container, Image, Nav, Row, Dropdown, DropdownButton, Button } from 'react-bootstrap'
-import { HiOutlineChevronDown } from "react-icons/hi";
+import { Card, Col, Container, Image, Nav, Row } from 'react-bootstrap'
 import { IoBedOutline } from "react-icons/io5";
 import { LuBath } from "react-icons/lu";
 import { MdOutlineSpaceDashboard } from "react-icons/md";
-import LandingBtn from '../components/LandingBtn';
 import LandingBtn2 from '../components/LandingBtn2';
 import LandingBtn3 from '../components/LandingBtn3';
 import CardAbout from '../components/CardAbout';
 import LandingBtn4 from '../components/LandingBtn4';
 import CardHouse from '../components/CardHouse';
-import Footer from '../components/Footer';
-import NavbarUser from '../components/NavbarUser';
+import FooterAll from '../components/FooterAll';
+import SearchBox from '../components/SearchBox';
+import BeforeFooter from '../components/BeforeFooter';
+import { Link } from 'react-router-dom';
 
 export default function Landingpage() {
     return (
@@ -24,55 +24,10 @@ export default function Landingpage() {
                     <Col xs={7} className='mb-5'>
                         <Nav className='fs-1 fw-bold'>Temukan Rumah Impianmu!</Nav>
                         <Nav>Setiap rumah memiliki kisahnya sendiri. Ayo temukan rumah yang memberikan makna baru untukmu.</Nav>
-                        <Card className='mt-5 card-search'>
-                            <Row className='p-4 d-flex justify-content-center align-items-center'>
-                                <Col className='box-right'>
-                                    <Nav className='fw-medium'>Lokasi</Nav>
-                                    <Dropdown className='mt-1'>
-                                        <Dropdown.Toggle as={CustomToggle} variant="outline-light">
-                                            <span className='fw-light text-dropdown'>Pilih Kota<HiOutlineChevronDown className='ms-2 fw-lighter fs-6' /></span>
-                                        </Dropdown.Toggle>
-                                        <Dropdown.Menu>
-                                            <Dropdown.Item className='dropdown-item' href="#/action-1">Kota 1</Dropdown.Item>
-                                            <Dropdown.Item href="#/action-2">Kota 2</Dropdown.Item>
-                                            <Dropdown.Item href="#/action-3">Kota 3</Dropdown.Item>
-                                        </Dropdown.Menu>
-                                    </Dropdown>
-                                </Col>
-                                <Col className='box-right'>
-                                    <Nav className='fw-medium'>Kategori</Nav>
-                                    <Dropdown className='mt-1'>
-                                        <Dropdown.Toggle as={CustomToggle} variant="outline-light">
-                                            <span className='fw-light text-dropdown'>Pilih Kategori<HiOutlineChevronDown className='ms-2 fw-lighter fs-6' /></span>
-                                        </Dropdown.Toggle>
-                                        <Dropdown.Menu>
-                                            <Dropdown.Item className='dropdown-item' href="#/action-1">Kategori 1</Dropdown.Item>
-                                            <Dropdown.Item href="#/action-2">Kategori 2</Dropdown.Item>
-                                            <Dropdown.Item href="#/action-3">Kategori 3</Dropdown.Item>
-                                        </Dropdown.Menu>
-                                    </Dropdown>
-                                </Col>
-                                <Col className='box-right'>
-                                    <Nav className='fw-medium'>Harga</Nav>
-                                    <Dropdown className='mt-1'>
-                                        <Dropdown.Toggle as={CustomToggle} variant="outline-light">
-                                            <span className='fw-light text-dropdown'>Batas Harga<HiOutlineChevronDown className='ms-2 fw-lighter fs-6' /></span>
-                                        </Dropdown.Toggle>
-                                        <Dropdown.Menu>
-                                            <Dropdown.Item className='dropdown-item' href="#/action-1">Harga 1</Dropdown.Item>
-                                            <Dropdown.Item href="#/action-2">Harga 2</Dropdown.Item>
-                                            <Dropdown.Item href="#/action-3">Harga 3</Dropdown.Item>
-                                        </Dropdown.Menu>
-                                    </Dropdown>
-                                </Col>
-                                <Col className='d-flex justify-content-center'>
-                                    <LandingBtn namaBtn='Kirim' />
-                                </Col>
-                            </Row>
-                        </Card>
+                        <SearchBox />
                         <Nav className='mt-5 gap-3'>
-                            <LandingBtn2 namaBtn='Explore' />
-                            <LandingBtn3 namaBtn='Hubungi Kami' />
+                            <Link to={'/login'}><LandingBtn2 namaBtn='Explore' /></Link>
+                            <Link to={'/contact-us'}><LandingBtn3 namaBtn='Hubungi Kami' /></Link>
                         </Nav>
                     </Col>
                     <Col className='mb-5'>
@@ -113,7 +68,7 @@ export default function Landingpage() {
                             </Col>
                         </Row>
                         <Row>
-                            <LandingBtn4 />
+                            <Link to={'/login'}><LandingBtn4 /></Link>
                         </Row>
                     </Card>
                 </Col>
@@ -130,7 +85,7 @@ export default function Landingpage() {
                 </Row>
             </Container>
 
-            <Container className='mb-5'>
+            <Container className='mb-5 mt-5'>
                 <Row className='d-flex justify-content-center align-items-center'>
                     <Col xs={8} className=''>
                         <Nav className="fs-3 fw-bold">Tentang Kami</Nav>
@@ -144,29 +99,9 @@ export default function Landingpage() {
                 </Row>
             </Container>
 
-            <Nav className='exp-section-2'>
-                <Container className='d-flex flex-column text-center align-items-center justify-content-center'>
-                        <Nav className='fs-2 fw-bold'>Pilih Rumah Ternyamanmu</Nav>
-                        <Nav className='mt-3'>Jadikan setiap detik dan sudut rumahmu berharga dan mengesankan.</Nav>
-                        <Button variant="outline-light" className='mt-3 ps-4 pt-2 pe-4 pb-2 rounded-5'>Hubungi Kami</Button>
-                </Container>
-            </Nav>
+            <BeforeFooter />
             
-            <Footer />
+            <FooterAll />
         </>
     )
 }
-
-const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
-    <a
-        href="#"
-        ref={ref}
-        onClick={(e) => {
-            e.preventDefault();
-            onClick(e);
-        }}
-        className="custom-toggle text-decoration-none"
-    >
-        {children}
-    </a>
-));

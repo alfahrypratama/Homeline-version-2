@@ -1,0 +1,16 @@
+body {
+    background-color: #FFF9EF !important;
+}
+
+.option-box {
+    background-color: rgba(200, 187, 174, 0.32) !important;
+    color: #40362E !important;
+    width: 197px;
+    height: 76px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.section-new {
+    background-color: rgba(101, 77, 57, 0.2) !important;
+}

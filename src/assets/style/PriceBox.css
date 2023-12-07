@@ -6,3 +6,14 @@
     color: black !important;
     font-size: 12px !important;
 }
+
+.fav-button-reverse {
+    color: red !important;
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+}
+
+.fav-button-reverse .bookmarked {
+    color: white !important;
+}

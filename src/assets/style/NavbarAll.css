@@ -1,0 +1,23 @@
+.box-navbar {
+    background-color: rgba(101, 77, 57, 0.36) !important;
+    border-radius: 30px 5px 30px 5px;
+}
+
+.text-navbar {
+    background-color: white;
+    border-radius: 30px;
+    padding: 5px 10px 5px 10px;
+}
+
+.dropdown-box {
+    background-color: rgba(242, 237, 230, 0.73) !important;
+    border-radius: 30px !important;
+}
+
+.dropdown-text {
+    background-color: white !important;
+    border-radius: 30px !important;
+    padding: 5px 10px 5px 10px !important;
+    color: #654D39 !important;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}

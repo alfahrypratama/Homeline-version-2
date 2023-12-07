@@ -1,12 +1,26 @@
 import React from 'react'
+import { useState } from 'react';
 import '../assets/style/PriceBox.css'
-import { Button, Nav } from 'react-bootstrap'
+import { Button, Col, Container, Nav, Row } from 'react-bootstrap'
+import { MdFavorite, MdFavoriteBorder } from "react-icons/md";
+import { Link } from 'react-router-dom'
 
 
 export default function PriceBox() {
+  const [isBookmarked, setBookmarked] = useState(false);
+
+  const toggleBookmark = () => {
+    setBookmarked(!isBookmarked);
+  };
+
   return (
     <>
-      <Button className='position-absolute mt-3 ms-3 price-btn'>Mulai <span className='fw-semibold'>13jt / Bulan</span></Button>{' '}
+      <Container className='position-absolute p-3 justify-content-between d-flex align-items-center'>
+          <Button className='price-btn'>Mulai <span className='fw-semibold'>13jt / Bulan</span></Button>{' '}
+          <Link className='fav-button' onClick={toggleBookmark}>
+            {isBookmarked ? <MdFavorite style={{ fill: 'red' }}/> : <MdFavoriteBorder />}  
+          </Link>
+      </Container>
     </>
   )
 }

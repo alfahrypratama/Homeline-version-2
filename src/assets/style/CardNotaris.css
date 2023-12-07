@@ -1,0 +1,10 @@
+.card-notaris {
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25) !important;
+    border-radius: 10px 10px 30px 10px !important;
+
+    font-size: 10px !important;
+}
+
+.card-notaris-img {
+    border-radius: 8px 8px 40px 8px !important;
+}

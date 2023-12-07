@@ -7,10 +7,9 @@ import { Button, Card, CardGroup, Nav } from 'react-bootstrap'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 
-import PriceBox from './PriceBox';
-import { Link } from 'react-router-dom';
+import PriceBox2 from './PriceBox2';
 
-export default function CardHouse() {
+export default function CardHouseFavorite() {
     const [isHovered, setIsHovered] = useState(false);
 
     const splideOptions = {
@@ -21,7 +20,6 @@ export default function CardHouse() {
     };
     return (
         <>
-            <Link to={'/detail'} className='text-decoration-none'>
             <Card style={{ width: '19rem' }} className='position-relative card-house' onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
                 <Splide aria-label="My Favorite Images" options={splideOptions}>
                     <SplideSlide>
@@ -31,7 +29,7 @@ export default function CardHouse() {
                         <Card.Img variant="top" src="/images/ex3.png" className='card-house-img' />
                     </SplideSlide>
                 </Splide>
-                <PriceBox />
+                <PriceBox2 />
                 <Card.Body>
                     <Card.Text className='fw-bold'>Bali</Card.Text>
                     <Card.Title className='fw-bold fs-5'>Tropical Villa Kerobokan</Card.Title>
@@ -47,7 +45,6 @@ export default function CardHouse() {
                     </Card.Text>
                 </Card.Body>
             </Card>
-            </Link>
         </>
     )
 }

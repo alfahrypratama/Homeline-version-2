@@ -37,7 +37,7 @@ export default function Register() {
                             <AuthForm label='Konfirmasi kata sandi' type='password' placeholder='Masukan ulang kata sandi' />
                         </Form.Group>
                     </Container>
-                    <AuthButton namaBtn='Daftar' />
+                    <Link to={'/homepage'}><AuthButton namaBtn='Daftar'/></Link>
                     <div>
                         Sudah punya akun? <Link to={'/login'} className='text-decoration-none font-accent'>Masuk</Link>
                     </div>

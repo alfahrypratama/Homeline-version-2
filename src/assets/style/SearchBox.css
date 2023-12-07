@@ -1,0 +1,37 @@
+.custom-toggle {
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+    color: #000;
+}
+
+.custom-toggle:hover,
+.custom-toggle:active {
+    border: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: #000 !important;
+}
+
+.custom-toggle:focus {
+    box-shadow: none !important;
+}
+
+/* Gaya khusus untuk Dropdown.Item */
+.custom-dropdown .dropdown-item {
+    background-color: transparent !important;
+    color: #000 !important;
+}
+
+.text-dropdown {
+    font-size: 15px !important;
+}
+
+.box-right {
+    border-right: solid 1px #CFD3D6;
+}
+
+.card-search {
+    border-radius: 50px !important;
+    height: 80px !important;
+}

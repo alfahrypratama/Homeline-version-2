@@ -1,0 +1,13 @@
+.btn-daftar {
+    background-color: #40362E !important;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 40px;
+
+}
+
+.section-daftar {
+    background-color: rgba(101, 77, 57, 0.19) !important;
+    border-radius: 30px;
+}

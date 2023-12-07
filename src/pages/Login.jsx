@@ -34,7 +34,7 @@ export default function Login() {
                             <AuthForm label='Kata Sandi' type='password' placeholder='Masukan kata sandi'/>
                         </Form.Group>
                     </Container>
-                    <AuthButton namaBtn='Masuk'/>
+                    <Link to={'/homepage'}><AuthButton namaBtn='Masuk'/></Link>
                     <div className='fw-medium'>
                         Belum punya akun? <Link to={'/register'} className='text-decoration-none font-accent'>Daftar</Link>
                     </div>
