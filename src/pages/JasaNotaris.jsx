@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
 import NavbarAll from '../components/NavbarAll'
 import FooterAll from '../components/FooterAll'
 import { Col, Container, Nav, Row } from 'react-bootstrap'
@@ -9,6 +10,21 @@ import { Link } from 'react-router-dom'
 import '../assets/style/JasaNotaris.css'
 
 export default function JasaNotaris() {
+
+    const [notaris, setNotaris] = useState([]);
+
+    async function getNotaris() {
+        const response = await axios.get('http://localhost:3052/jasa-notaris');
+
+        // console.log(response.data);
+
+        setNotaris(response.data);
+    }
+
+    useEffect(() => {
+        getNotaris();
+    }, []);
+
     return (
         <>
             <NavbarAll />
@@ -23,15 +39,17 @@ export default function JasaNotaris() {
                 </Row>
             </Container>
             <Container className='mt-4'>
-                <Nav className='justify-content-center mb-4'>Menampilkan 2 hasil</Nav>
+                <Row xs={6} md={3} className='mt-4 g-5'>
+                    { notaris.length == 0 ? (
+                        <Col>Data Kosong</Col>
 
-                <Row xs={6} md={3} className='g-5'>
-                    <Col className='justify-content-center d-flex'>
-                        <CardNotaris />
-                    </Col>
-                    <Col className='justify-content-center d-flex'>
-                        <CardNotaris />
-                    </Col>
+                    ) : (notaris.data.map((notaris, index) =>{
+                        return (
+                            <Col key={index} className='justify-content-center d-flex'>
+                                <CardNotaris foto={notaris.foto} nama={notaris.nama} alamat={notaris.alamat} />
+                            </Col>
+                        );
+                    }))};
                 </Row>
             </Container>
             <Container className="mt-5 mb-5 section-daftar pt-3 pb-3 ps-5 pe-5">

@@ -17,9 +17,9 @@ export default function SearchBox() {
                                 <span className='fw-light text-dropdown'>Pilih Kota<HiOutlineChevronDown className='ms-2 fw-lighter fs-6' /></span>
                             </Dropdown.Toggle>
                             <Dropdown.Menu>
-                                <Dropdown.Item className='dropdown-item' href="#/action-1">Kota 1</Dropdown.Item>
-                                <Dropdown.Item href="#/action-2">Kota 2</Dropdown.Item>
-                                <Dropdown.Item href="#/action-3">Kota 3</Dropdown.Item>
+                                <Dropdown.Item className='dropdown-item' href="#/action-1">Bali</Dropdown.Item>
+                                <Dropdown.Item href="#/action-2">Jakarta</Dropdown.Item>
+                                <Dropdown.Item href="#/action-3">Bandung</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                     </Col>
@@ -30,9 +30,8 @@ export default function SearchBox() {
                                 <span className='fw-light text-dropdown'>Pilih Kategori<HiOutlineChevronDown className='ms-2 fw-lighter fs-6' /></span>
                             </Dropdown.Toggle>
                             <Dropdown.Menu>
-                                <Dropdown.Item className='dropdown-item' href="#/action-1">Kategori 1</Dropdown.Item>
-                                <Dropdown.Item href="#/action-2">Kategori 2</Dropdown.Item>
-                                <Dropdown.Item href="#/action-3">Kategori 3</Dropdown.Item>
+                                <Dropdown.Item className='dropdown-item' href="#/action-1">Rumah</Dropdown.Item>
+                                <Dropdown.Item href="#/action-2">Tanah</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                     </Col>
