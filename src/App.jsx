@@ -14,6 +14,12 @@ import JasaNotaris from "./pages/JasaNotaris"
 import Blog from "./pages/Blog"
 import DetailBlog from "./pages/DetailBlog"
 import JualProperti from "./pages/JualProperti"
+import NotarisAdmin from "./pages/NotarisAdmin"
+import Verifnotaris from "./pages/Verifnotaris"
+import Admin_lihatpelanggan from "./pages/Admin_lihatpelanggan"
+import Admin_profil from "./pages/Admin_profil"
+
+
 
 function App() {
   return (
@@ -31,6 +37,12 @@ function App() {
       <Route path='/blog' element={<Blog />} />
       <Route path='/detailblog' element={<DetailBlog />} />
       <Route path='/jualproperti' element={<JualProperti />} />
+      
+      <Route path='/NotarisAdmin' element={<NotarisAdmin />}/>
+      <Route path='/Verifnotaris' element={<Verifnotaris />}/>
+      <Route path='/Admin_lihatpelanggan' element={<Admin_lihatpelanggan />}/>
+      <Route path='/Admin_profil' element={<Admin_profil />}/>
+
     </Routes>
     </>
   )
