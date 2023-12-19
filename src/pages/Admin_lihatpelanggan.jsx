@@ -27,7 +27,7 @@ function Admin_lihatpelanggan() {
                       type="text"
                       className="form-control"
                       id="nama"
-                      placeholder="Syalala"
+                      placeholder=""
                     />
                   </div>
                   <div className="mt-3">
@@ -38,7 +38,7 @@ function Admin_lihatpelanggan() {
                       type="email"
                       className="form-control"
                       id="email"
-                      placeholder="syalala@gmail.com"
+                      placeholder=""
                     />
                   </div>
                   <div className="mt-3">
@@ -49,7 +49,7 @@ function Admin_lihatpelanggan() {
                       type="text"
                       className="form-control"
                       id="no"
-                      placeholder="0293192090228"
+                      placeholder=""
                     />
                   </div>
                   <div className="mt-3">
@@ -60,7 +60,7 @@ function Admin_lihatpelanggan() {
                       type="text"
                       className="form-control"
                       id="domisili"
-                      placeholder="Surabaya"
+                      placeholder=""
                     />
                   </div>
                   <div className="mt-3">
@@ -71,7 +71,7 @@ function Admin_lihatpelanggan() {
                       type="text-area"
                       className="form-control"
                       id="bio"
-                      placeholder="Tuliskan disini"
+                      placeholder=""
                     />
                   </div>
   
