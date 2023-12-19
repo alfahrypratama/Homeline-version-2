@@ -18,12 +18,12 @@ export default function Homepage() {
                     <Col className="">
                         <Nav className='fs-2 fw-bold mb-5'>Mulailah Jual atau Beli Properti dengan Homeline</Nav>
                         <Container className=" d-flex gap-4 justify-content-center align-items-center mb-4">
-                            <Nav className='option-box text-center justify-content-center align-items-center fs-5 fw-semibold'>Jual <br />Properti</Nav>
+                        <Link to={'/jualproperti'} className='text-decoration-none'><Nav className='option-box text-center justify-content-center align-items-center fs-5 fw-semibold'>Jual <br />Properti</Nav></Link>
                             <Link to={'/jasa-notaris'} className='text-decoration-none'><Nav className='option-box text-center justify-content-center align-items-center fs-5 fw-semibold'>Jasa <br />Notaris</Nav></Link>
                         </Container>
                         <Container className=" d-flex gap-4 justify-content-center align-items-center">
-                            <Nav className='option-box text-center justify-content-center align-items-center fs-5 fw-semibold'>Favorite</Nav>
-                            <Nav className='option-box text-center justify-content-center align-items-center fs-5 fw-semibold'>Blog <br /> Homeline</Nav>
+                        <Link to={'/favorite'} className='text-decoration-none'><Nav className='option-box text-center justify-content-center align-items-center fs-5 fw-semibold'>Favorite</Nav></Link>
+                        <Link to={'/blog'} className='text-decoration-none'><Nav className='option-box text-center justify-content-center align-items-center fs-5 fw-semibold'>Blog <br /> Homeline</Nav></Link>
                         </Container>
                         <SearchBox />
                     </Col>

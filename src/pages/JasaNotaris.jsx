@@ -60,7 +60,7 @@ export default function JasaNotaris() {
                     <Col className=''>
                         <Nav className='justify-content-center'>Daftar Disini</Nav>
                         <Nav className='justify-content-center'>
-                            <Link className='text-decoration-none fs-5 fw-semibold justify-content-center text-center align-items-center d-flex btn-daftar'>
+                            <Link to={"/pendaftaran-notaris"} className='text-decoration-none fs-5 fw-semibold justify-content-center text-center align-items-center d-flex btn-daftar'>
                                 Daftar
                             </Link>
                         </Nav>

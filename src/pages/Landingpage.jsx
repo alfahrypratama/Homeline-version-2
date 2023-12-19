@@ -26,7 +26,7 @@ export default function Landingpage() {
                         <Nav>Setiap rumah memiliki kisahnya sendiri. Ayo temukan rumah yang memberikan makna baru untukmu.</Nav>
                         <SearchBox />
                         <Nav className='mt-5 gap-3'>
-                            <Link to={'/login'}><LandingBtn2 namaBtn='Explore' /></Link>
+                            <Link to={'/auth/login'}><LandingBtn2 namaBtn='Explore' /></Link>
                             <Link to={'/contact-us'}><LandingBtn3 namaBtn='Hubungi Kami' /></Link>
                         </Nav>
                     </Col>

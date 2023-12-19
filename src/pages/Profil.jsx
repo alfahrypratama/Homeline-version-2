@@ -8,18 +8,15 @@ import Button from 'react-bootstrap/Button';
 
 import '../assets/style/ProfilAdmin.css';
 import Sidebar from '../components/Sidebar';
-import NavbarallAdmin from '../components/NavbarallAdmin';
+import NavbarAll from '../components/NavbarAll';
 
 
-function Admin_profil() {
+function Profil() {
   return (
     <>
-    <NavbarallAdmin/>
+    <NavbarAll/>
     <div style={{ display:'flex', justifyContent:'center', paddingTop:"30px"}}>
       
-    <div>
-    <Sidebar/>
-    </div> 
     <Card className="d-flex justify-content-center " style={{ paddingTop:"50px", width:"900px" }}>
       <Card.Body>
         <Row className="mb-3" >
@@ -94,4 +91,4 @@ function Admin_profil() {
   );
 }
 
-export default  Admin_profil;
+export default  Profil;
