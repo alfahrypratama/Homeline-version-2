@@ -1,0 +1,44 @@
+.containerAdmin{
+    background-color: rgba(101, 77, 57, 0.36) !important;
+    border-radius: 50px 5px 50px 10px;
+    width: 1379px;
+    height: 91px;
+    top: 24px;
+    left: 31px;
+    border-radius: (30px, 0px, 30px, 0px);
+
+}
+button[type="submit"] {
+    padding: 8px 16px;
+    background-color: #40362E;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+   }
+   
+   button[type="submit"]:hover {
+    background-color: #0056b3;
+    position: absolute;
+    width: Fixed (235px);    
+    height: Fixed (61px);
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    padding: 0px, 20px, 0px, 20px;  
+    border-radius: 20px;
+    gap: 14px;
+}
+
+.admin-section {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.admin-label {
+    margin-left: 5px; /* Memberikan jarak antara foto dan label admin */
+    font-weight: bold; /* Mengatur tebal font jika diperlukan */
+    margin-left: 5px;
+}
+

@@ -1,0 +1,30 @@
+
+
+
+/* formulir.css */
+
+.card{    
+width: 600px;
+height: 1629px;
+margin:60px ;
+background-position: #803737;
+margin-bottom: 30px;
+}
+.card-body{
+    background-color: #d8c3c3;
+}
+.btn-primary {
+    width:  (149px);
+    height: (67px);
+    top: 1518px;
+    left: 677px;
+    padding: 0px, 30px, 0px, 30px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-block-end: auto;
+    
+}    
+
+.body{
+    background-color: burlywood;
+}

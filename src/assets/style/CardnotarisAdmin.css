@@ -1,0 +1,38 @@
+/* Tambahkan ke file CSS Anda atau gunakan inline styling di komponen React Anda */
+
+/* Cardnotaris.css */
+
+/* Opsi: Gaya tambahan sesuai kebutuhan desain */
+  .Card{
+    width: 800px; /* Sesuaikan lebar card dengan kebutuhan */
+    margin: 20px; /* Sesuaikan margin dengan kebutuhan */
+  }
+  
+  .CardBody {
+    padding: 20px; /* Sesuaikan padding pada body card dengan kebutuhan */
+  }
+  
+  /* Gaya untuk form */
+  .FormGroup {
+    margin-bottom: 15px;
+  }
+  
+  /* Gaya untuk textarea */
+  #exampleForm.ControlTextarea1 {
+    resize: vertical; /* Biarkan textarea dapat diresize hanya secara vertikal */
+  }
+  
+  /* Opsi: Gaya tambahan sesuai kebutuhan desain */
+  .FormLabel {
+    font-weight: bold;
+  }
+  
+  /* Opsi: Gaya tambahan sesuai kebutuhan desain */
+  .FormControl {
+    border-radius: 5px; /* Sesuaikan radius border input dengan kebutuhan */
+    width: Fixed (810px);
+    height: fixed (90px);
+    gap: 4px;
+
+  }
+  
