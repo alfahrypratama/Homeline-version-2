@@ -17,7 +17,14 @@ import JualProperti from "./pages/JualProperti"
 import NotarisAdmin from "./pages/NotarisAdmin"
 import Verifnotaris from "./pages/Verifnotaris"
 import Admin_lihatpelanggan from "./pages/Admin_lihatpelanggan"
-import Admin_profil from "./pages/Admin_profil"
+import Admin_profil from "./pages/Profil"
+import Admin_listblog from "./pages/Admin_listblog"
+import Admin_listpesanan from "./pages/Admin_listpesanan"
+import Admin_listpelanggan from "./pages/Admin_listpelanggan"
+import Pendaftarannotaris from "./pages/PendaftaranNotaris"
+import Profil from "./pages/Profil"
+import Adminlistpesanan from "./pages/Adminlistpesanan"
+
 
 
 
@@ -37,11 +44,18 @@ function App() {
       <Route path='/blog' element={<Blog />} />
       <Route path='/detailblog' element={<DetailBlog />} />
       <Route path='/jualproperti' element={<JualProperti />} />
+      <Route path='/pendaftaran-notaris' element={<Pendaftarannotaris />} />
+      <Route path='/Profil' element={<Profil />}/>
       
       <Route path='/NotarisAdmin' element={<NotarisAdmin />}/>
       <Route path='/Verifnotaris' element={<Verifnotaris />}/>
       <Route path='/Admin_lihatpelanggan' element={<Admin_lihatpelanggan />}/>
-      <Route path='/Admin_profil' element={<Admin_profil />}/>
+      <Route path='/AdminProfil' element={<Admin_profil />}/>
+
+      <Route path='/Admin_listblog' element={<Admin_listblog />}/>
+      <Route path='/Admin_listpelanggan' element={<Admin_listpelanggan />}/>
+      <Route path='/Admin_listpesanan' element={<Admin_listpesanan />}/>
+      <Route path='/Adminlistpesanan' element={<Adminlistpesanan />}/>
 
     </Routes>
     </>

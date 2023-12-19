@@ -10,13 +10,13 @@ function JualProperti() {
       <Container className="p-3">
         <p>Home - Jual Properti</p>
         <hr />
-        <h1 className="text-center my-5 fw-bold" style={{ width: "100%" }}>
+        <h3 className="text-center my-5 fw-bold" style={{ width: "100%" }}>
           Jual Properti dengan Mudah dan Cepat dengan Homeline
-        </h1>
+        </h3>
         <Row>
           <Col className="col-8">
             <Card className="p-3 rounded-4 d-flex flex-column gap-3">
-              <h3 className="fw-bold">Isi Formulir</h3>
+              <h4 className="fw-bold">Isi Formulir</h4>
               <form action="">
                 <Container className="d-flex gap-3 fw-bold">
                   <div className="border border-3 py-1 px-3 rounded-5">
@@ -190,7 +190,40 @@ function JualProperti() {
             </Card>
           </Col>
         </Row>
+        <br />  <br /><br />
+
+      <h4 style={{textAlign:"center"}}>FAQ ( Freqently Asked Question)</h4>
+        <div class="accordion" id="accordionExample">
+         <div class="accordion-item">
+    <h2 class="accordion-header " >
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne " >
+      <strong style={{fontStyle:"initial"}}>Foto berformat apa yang boleh dimasukkan</strong>
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        foto berformat jpg/jpeg/png
+      </div>
+    </div>
+       </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+       <strong>Berapa lama rentang waktu verifikasi ?</strong>
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Verifikasi dalam rentang waktu 3x24 jam.
+      </div>
+    </div>
+  </div>
+
+        </div>
+      
+        
       </Container>
+      <br /> <br />
       <FooterAll />
     </>
   );

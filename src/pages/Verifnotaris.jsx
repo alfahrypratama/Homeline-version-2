@@ -12,7 +12,7 @@ function Verifnotaris () {
         <>
         <NavbarallAdmin/>
 
-        <div style={{ display:'flex', justifyContent:'center', paddingTop:"30px"}}>
+        <div style={{ display:'flex', justifyContent:'center', paddingTop:"50px"}}>
             <div>
             <Sidebar/>
             </div>

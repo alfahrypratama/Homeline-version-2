@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 import '../assets/style/NavbarallAdmin.css';
 
-function NavbarallAdmin() {
+function NavbarallAdmin2() {
     return (
       <>
         <Navbar className="bg-body-tertiary">
@@ -31,4 +31,4 @@ function NavbarallAdmin() {
     );
   }
   
-  export default NavbarallAdmin; 
+  export default NavbarallAdmin2; 

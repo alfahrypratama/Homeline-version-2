@@ -10,7 +10,7 @@ function Admin_lihatpelanggan() {
         <>
         <NavbarallAdmin/>
 
-        <div style={{ display:'flex', justifyContent:'center', paddingTop:"80px"}}>
+        <div style={{ display:'flex', justifyContent:'center', paddingTop:"50px"}}>
             <div>
             <Sidebar/>
             </div>
