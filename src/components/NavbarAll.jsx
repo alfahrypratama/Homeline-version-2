@@ -35,8 +35,9 @@ export default function NavbarAll() {
                                     </Dropdown.Toggle>
                                     <Dropdown.Menu className='mt-2 dropdown-box p-3'>
 
-                                        <Dropdown.Item href="#/action-1" className='text-center dropdown-text mb-3 fw-medium'><Link to={'/Profil'}>Profil</Link</Dropdown.Item>
-                                        <Dropdown.Item className='text-center dropdown-text fw-medium' onClick={handleLogout}>Keluar</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-1" className='text-center dropdown-text mb-3 fw-medium'>
+                                    <Link to={'/Profil'}>Profil</Link></Dropdown.Item>
+                                        <Dropdown.Item className='text-center dropdown-text fw-medium'><Link to={'/landingpage'} className='text-decoration-none'>Keluar</Link></Dropdown.Item>
 
                                     </Dropdown.Menu>
                                 </Dropdown>

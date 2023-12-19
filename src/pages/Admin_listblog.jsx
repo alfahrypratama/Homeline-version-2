@@ -4,6 +4,7 @@ import CardBlog from '../components/CardBlog';
 import FooterAll from '../components/FooterAll';
 import NavbarallAdmin from '../components/NavbarallAdmin';
 import Sidebar from '../components/Sidebar';
+import { Link } from 'react-router-dom';
 
 
 function Admin_listblog() {
@@ -16,12 +17,14 @@ function Admin_listblog() {
         </div>
         <br />
         <div style={{width:"900px"}}>
+        <Link to={'/Admintambahblog'}>
         <button
                     className="mx-0 px-1 py-2  text-light text-center fw-bold"
                     style={{ backgroundColor: "#5B4533", borderRadius:"0px 10px 10px 10px", width:"150px", marginBottom:"20px"}}
                   >
                     Tambah Blog
         </button>
+        </Link>
         <div className="card">
             <div className="card-body">
                 <div className='d-flex gap-4'>
@@ -34,7 +37,7 @@ function Admin_listblog() {
                         <span style={{color:"grey"}}>dipublikasikan 14 November 2023</span>
                     </div>
                     <div class="d-grid gap-1 d-md-flex justify-content-md-end " style={{height:"40px", alignContent:"center"}}>
-                      <button class="btn btn-primary me-md-3" style={{borderRadius:"20px"}} type="button">Edit</button>
+                      <Link to={'/Admineditblog'}><button class="btn btn-primary me-md-3" style={{borderRadius:"20px"}} type="button">Edit</button></Link>
                       <button class="btn btn-danger" style={{borderRadius:"20px"}} type="button">Hapus</button>
                     </div>
                     </div>

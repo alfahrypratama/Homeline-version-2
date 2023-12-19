@@ -1,14 +1,23 @@
 .sidebarContainer {
     margin-left: 20px;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 10px;
     margin-bottom: 40px;
+    justify-content: space-between;
+    width: 200px;
 
+}
+.sidebarItem{
+    display: flex;
+    width: 200px;
+    align-items: center;
+    gap: 10px;
+    
 }
 
 .sidebarItem:hover .sidebarTitle {
-    color: #00c2b1;
-    padding: 50px;
+    color: #1e46ac;
+    padding: 20px;
     
 }
 
@@ -17,11 +26,15 @@
     border-radius: 40px 0px 40px 0px;
     padding: 50px;
     width: 286px;
-    height: 1330px;
+    height: 1100px;
     /* top: 144px;
     left: 10%; Mengatur posisi horizontal di tengah */
     transform: translateX(-20%); /* Pusatkan elemen dengan menggunakan transform */
      /* Perbaikan pada properti border-radius */
     float: left;
     /* position: relative; Menambahkan position relative agar top dan left dapat bekerja */
+}
+.sidebarTitle{
+    font-size: 20px;
+    color: black;
 }

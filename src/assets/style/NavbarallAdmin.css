@@ -1,4 +1,4 @@
-.containerAdmin{
+.Container_admin{
     background-color: rgba(101, 77, 57, 0.36) !important;
     border-radius: 50px 5px 50px 10px;
     width: 1379px;
@@ -41,4 +41,3 @@ button[type="submit"] {
     font-weight: bold; /* Mengatur tebal font jika diperlukan */
     margin-left: 5px;
 }
-

@@ -1,32 +1,36 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
-
+import { Image, Container, Navbar, Nav } from 'react-bootstrap';
 import '../assets/style/NavbarallAdmin.css';
+import { Link } from 'react-router-dom';
 
 function NavbarallAdmin() {
     return (
       <>
-        <Navbar className="bg-body-tertiary">
-          <Container  className="containerAdmin d-flex justify-content-between align-items-center">
-            <Navbar.Brand href="#home" className="font-weight-bold">
-              <img alt="" src="/images/Logo.png" width="80" height="30" className="d-inline-block align-top" />
-              {' '}
-             <span className='admin-label'>HOMELINE</span>
-            </Navbar.Brand>
-  
-            {/* Add the admin section */}
-      <div className="d-flex items-center" style={{marginRight:"20px"}}>
-        <span className="flex self-center text-xl ml-2 whitespace-nowrap text-black mr-2">
-          <b>Hello</b>, <p className='font-semibold'> Admin</p>
-        </span>
-        <img
-          src="/images/avatar.png" width="50" height="50"  className="d-inline-block align-top rounded"
-          alt="Profile"
-        />
-      </div>
-          </Container>
-        </Navbar>
+        <Container className=' Containeradmin box-navbar mt-4'>
+          <Navbar className="">
+            <Link to={'/homepage'} className='text-decoration-none'>
+              <Navbar.Brand className="fw-bold">
+                <Image src='/images/Logo.png' className="w-50" />
+                Homeline
+              </Navbar.Brand>
+            </Link>
+            <Navbar.Collapse className="justify-content-end">
+              <Nav className="me-4">
+                {/* Tambahkan bagian gambar profil admin avatar di sini */}
+                <Nav.Link>
+                  <img
+                    src='/images/avatar.png'
+                    alt='Admin Avatar'
+                    roundedCircle
+                    className='admin-avatar'
+                    style={{ width: '50px', height: '50px' }} /* Sesuaikan ukuran yang diinginkan */
+                  />
+                  <span className='ms-2 fw-semibold'>Admin</span>
+                </Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
+        </Container>
       </>
     );
   }

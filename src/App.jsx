@@ -24,6 +24,9 @@ import Admin_listpelanggan from "./pages/Admin_listpelanggan"
 import Pendaftarannotaris from "./pages/PendaftaranNotaris"
 import Profil from "./pages/Profil"
 import Adminlistpesanan from "./pages/Adminlistpesanan"
+import Admin_editblog from "./pages/Admin_editblog"
+import Admin_tambahblog from "./pages/Admin_tambahblog"
+import Listpesanangagal from "./pages/Listpesanangagal"
 
 
 
@@ -51,10 +54,13 @@ function App() {
       <Route path='/Verifnotaris' element={<Verifnotaris />}/>
       <Route path='/Admin_lihatpelanggan' element={<Admin_lihatpelanggan />}/>
       <Route path='/AdminProfil' element={<Admin_profil />}/>
+      <Route path='/Admineditblog' element={<Admin_editblog />}/>
+      <Route path='/Admintambahblog' element={<Admin_tambahblog />}/>
 
       <Route path='/Admin_listblog' element={<Admin_listblog />}/>
       <Route path='/Admin_listpelanggan' element={<Admin_listpelanggan />}/>
       <Route path='/Admin_listpesanan' element={<Admin_listpesanan />}/>
+      <Route path='/Admin_listpesanangagal' element={<Listpesanangagal />}/>
       <Route path='/Adminlistpesanan' element={<Adminlistpesanan />}/>
 
     </Routes>
