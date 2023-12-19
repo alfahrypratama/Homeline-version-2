@@ -3,6 +3,7 @@
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
+
 }
 
 .sidebarItem:hover .sidebarTitle {
@@ -13,13 +14,14 @@
 
 .form-background {
     background-color: rgba(101, 77, 57, 0.36);
+    border-radius: 40px 0px 40px 0px;
     padding: 50px;
     width: 286px;
     height: 1330px;
     /* top: 144px;
     left: 10%; Mengatur posisi horizontal di tengah */
     transform: translateX(-20%); /* Pusatkan elemen dengan menggunakan transform */
-    border: 20px, 5px, 20px, 5px; /* Perbaikan pada properti border-radius */
+     /* Perbaikan pada properti border-radius */
     float: left;
     /* position: relative; Menambahkan position relative agar top dan left dapat bekerja */
 }
