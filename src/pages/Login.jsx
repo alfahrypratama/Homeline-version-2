@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import Cookies from 'js-cookie'
 
 //Component
 import AuthForm from "../components/AuthForm"
@@ -42,7 +43,16 @@ export default function Login() {
         });
         alert(result.data.massage);
         if (result.data.success) {
-            window.location.href = result.data.redirectUrl
+            // window.location.href = result.data.redirectUrl
+            Cookies.set('nama', result.data.user.nama, {
+                expires: new Date(Date.now() + 1000 * 60 * 60),
+                path: '/',
+            });
+            Cookies.set('email', result.data.user.email, {
+                expires: new Date(Date.now() + 1000 * 60 * 60),
+                path: '/',
+            });
+            window.location.href = '/homepage'
         }
     };
 

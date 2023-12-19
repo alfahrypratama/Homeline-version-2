@@ -8,6 +8,10 @@ class NotarisController {
             data: data[0],
         });
     }
+
+    async postNotaris(req, res) {
+        const data = await db.promise().query(`INSERT INTO xxx, xxx values()`)
+    }
 }
 
 module.exports = new NotarisController()
