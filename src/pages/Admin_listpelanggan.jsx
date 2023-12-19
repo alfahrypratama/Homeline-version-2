@@ -5,6 +5,7 @@ import FooterAll from '../components/FooterAll';
 import NavbarallAdmin from '../components/NavbarallAdmin';
 import Sidebar from '../components/Sidebar';
 import Search from '../components/search';
+import { Link } from 'react-router-dom';
 
 
 
@@ -36,7 +37,7 @@ function Admin_listpelanggan() {
       <td style={{color:"green", textAlign:"center"}}>Aktif</td>
       <td>
             <div class="d-grid gap-1 d-md-flex justify-content-center " style={{height:"40px", alignContent:"center"}}>
-                      <button class="btn btn-primary me-md-3" style={{borderRadius:"20px"}} type="button">Edit</button>
+                      <Link to={'/Admin_lihatpelanggan'}><button class="btn btn-primary me-md-3" style={{borderRadius:"20px"}} type="button">Edit</button> </Link>
                       <button class="btn btn-danger" style={{borderRadius:"20px"}} type="button">Hapus</button>
             </div>
       </td>
@@ -48,7 +49,7 @@ function Admin_listpelanggan() {
       <td style={{color:"red", textAlign:"center"}}>Kadaluarsa</td>
       <td>
             <div class="d-grid gap-1 d-md-flex justify-content-center " style={{height:"40px", alignContent:"center"}}>
-                      <button class="btn btn-primary me-md-3" style={{borderRadius:"20px"}} type="button">Edit</button>
+                      <Link to={'/Admin_lihatpelanggan'}><button class="btn btn-primary me-md-3" style={{borderRadius:"20px"}} type="button">Edit</button> </Link>
                       <button class="btn btn-danger" style={{borderRadius:"20px"}} type="button">Hapus</button>
             </div>
       </td>
