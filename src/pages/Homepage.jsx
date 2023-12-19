@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
+import Cookies from 'js-cookie'
 import NavbarAll from '../components/NavbarAll'
 import '../assets/style/Homepage.css'
 import { Col, Container, Image, Nav, Row } from 'react-bootstrap'
@@ -10,6 +12,16 @@ import FooterAll from '../components/FooterAll'
 import { Link } from 'react-router-dom'
 
 export default function Homepage() {
+
+    const nama = Cookies.get('nama')
+    const email = Cookies.get('email')
+
+    if (!nama) {
+        window.location.href = '/auth/login';
+        return;
+    }
+
+
     return (
         <>
             <NavbarAll />
@@ -17,6 +29,8 @@ export default function Homepage() {
                 <Row className='d-flex justify-content-center align-items-center'>
                     <Col className="">
                         <Nav className='fs-2 fw-bold mb-5'>Mulailah Jual atau Beli Properti dengan Homeline</Nav>
+                        {nama}
+                        {email}
                         <Container className=" d-flex gap-4 justify-content-center align-items-center mb-4">
                             <Nav className='option-box text-center justify-content-center align-items-center fs-5 fw-semibold'>Jual <br />Properti</Nav>
                             <Link to={'/jasa-notaris'} className='text-decoration-none'><Nav className='option-box text-center justify-content-center align-items-center fs-5 fw-semibold'>Jasa <br />Notaris</Nav></Link>

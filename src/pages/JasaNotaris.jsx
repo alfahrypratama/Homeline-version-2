@@ -8,6 +8,7 @@ import CardNotaris from '../components/CardNotaris'
 import { Link } from 'react-router-dom'
 
 import '../assets/style/JasaNotaris.css'
+import Cookies from 'js-cookie'
 
 export default function JasaNotaris() {
 

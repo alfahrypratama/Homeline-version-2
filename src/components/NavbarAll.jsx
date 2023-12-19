@@ -7,8 +7,16 @@ import { Container, Dropdown, Image, Nav, Navbar } from 'react-bootstrap'
 
 import { Link } from 'react-router-dom'
 import { HiOutlineChevronDown } from 'react-icons/hi';
+import Cookies from 'js-cookie';
 
 export default function NavbarAll() {
+
+    function handleLogout() {
+        Cookies.remove('nama')
+        Cookies.remove('email')
+        window.location.href = '/'
+    }
+
     return (
         <>
             <Container className='box-navbar mt-4'>
@@ -27,7 +35,7 @@ export default function NavbarAll() {
                                     </Dropdown.Toggle>
                                     <Dropdown.Menu className='mt-2 dropdown-box p-3'>
                                         <Dropdown.Item href="#/action-1" className='text-center dropdown-text mb-3 fw-medium'>Profil</Dropdown.Item>
-                                        <Dropdown.Item className='text-center dropdown-text fw-medium'><Link to={'/'} className='text-decoration-none'>Keluar</Link></Dropdown.Item>
+                                        <Dropdown.Item className='text-center dropdown-text fw-medium' onClick={handleLogout}>Keluar</Dropdown.Item>
                                     </Dropdown.Menu>
                                 </Dropdown>
                             </Nav.Link>
