@@ -9,4 +9,3 @@ route.post('/auth/register', AuthController.register)
 route.post('/auth/login', AuthController.login)
 
 module.exports = route;
-

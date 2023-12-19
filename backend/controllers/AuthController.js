@@ -41,7 +41,8 @@ class AuthController {
         const email = data.email
         const password = data.password
 
-        const checkNamaOrEmail = await db.promise().query(`SELECT nama, email, password FROM user WHERE nama = '${nama}' OR email = '${email}'`)
+        // const checkNamaOrEmail = await db.promise().query(`SELECT nama, email, password FROM user WHERE nama = '${nama}' OR email = '${email}'`)
+        const checkNamaOrEmail = await db.promise().query(`SELECT * FROM user WHERE nama = '${nama}' OR email = '${email}'`)
         
         // check nama atau password
         if (checkNamaOrEmail[0].length == 0) {
@@ -60,7 +61,12 @@ class AuthController {
         return res.json({
             success: true,
             massage: 'Selamat anda berhasil login',
-            redirectUrl: '/homepage',
+            user: {
+                nama: checkNamaOrEmail[0][0].nama,
+                email: checkNamaOrEmail[0][0].email,
+                no_hp: checkNamaOrEmail[0][0].no_hp,
+                no_hp: checkNamaOrEmail[0][0].no_hp,
+            }
         });
         
     }
