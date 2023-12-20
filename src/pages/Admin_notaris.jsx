@@ -14,7 +14,7 @@ function Admin_notaris() {
   return (
     <>
       <NavbarallAdmin/>
-    <div style={{ display:'flex', justifyContent:'center', paddingTop:"50px"}}>
+    <div style={{ display:'flex', justifyContent:'center', paddingTop:"30px"}}>
         <div>
             <Sidebar/>
         </div>
@@ -23,7 +23,7 @@ function Admin_notaris() {
        <h3>Notaris</h3>
        <Search/> <br />
        <div className='d-flex'>
-       <table class="table mx-2 " style={{ width: '65%' }}>
+       <table class="table mx-2 " style={{ width: '70%' }}>
   <thead>
     <tr style={{textAlign:"center"}}>
       <th scope="col">Nama</th>
@@ -39,7 +39,7 @@ function Admin_notaris() {
       <td style={{color:"green", textAlign:"center"}}>Aktif</td>
       <td>
             <div class="d-grid gap-1 d-md-flex justify-content-center " style={{height:"40px", alignContent:"center"}}>
-                      <Link to={'/Admin_lihatpelanggan'}><button class="btn btn-primary me-md-3" style={{borderRadius:"20px"}} type="button">Edit</button> </Link>
+                      <Link to={'/NotarisAdmin'}><button class="btn btn-primary me-md-3" style={{borderRadius:"20px"}} type="button">Edit</button> </Link>
                       <button class="btn btn-danger" style={{borderRadius:"20px"}} type="button">Hapus</button>
             </div>
       </td>
@@ -51,103 +51,12 @@ function Admin_notaris() {
       <td style={{color:"red", textAlign:"center"}}>Kadaluarsa</td>
       <td>
             <div class="d-grid gap-1 d-md-flex justify-content-center " style={{height:"40px", alignContent:"center"}}>
-                      <Link to={'/Admin_lihatpelanggan'}><button class="btn btn-primary me-md-3" style={{borderRadius:"20px"}} type="button">Edit</button> </Link>
+                      <Link to={'/NotarisAdmin'}><button class="btn btn-primary me-md-3" style={{borderRadius:"20px"}} type="button">Edit</button> </Link>
                       <button class="btn btn-danger" style={{borderRadius:"20px"}} type="button">Hapus</button>
             </div>
       </td>
     </tr>
-    <tr>
-      <td scope="row">Syalala</td>
-      <td style={{textAlign:"center"}}>6 Bulan</td>
-      <td style={{color:"green", textAlign:"center"}}>Aktif</td>
-      <td>
-            <div class="d-grid gap-1 d-md-flex justify-content-center " style={{height:"40px", alignContent:"center"}}>
-                      <Link to={'/Admin_lihatpelanggan'}><button class="btn btn-primary me-md-3" style={{borderRadius:"20px"}} type="button">Edit</button> </Link>
-                      <button class="btn btn-danger" style={{borderRadius:"20px"}} type="button">Hapus</button>
-            </div>
-      </td>
-      
-    </tr>
-    <tr>
-      <td scope="row">Intan</td>
-      <td style={{textAlign:"center"}}>6 Bulan</td>
-      <td style={{color:"red", textAlign:"center"}}>Kadaluarsa</td>
-      <td>
-            <div class="d-grid gap-1 d-md-flex justify-content-center " style={{height:"40px", alignContent:"center"}}>
-                      <Link to={'/Admin_lihatpelanggan'}><button class="btn btn-primary me-md-3" style={{borderRadius:"20px"}} type="button">Edit</button> </Link>
-                      <button class="btn btn-danger" style={{borderRadius:"20px"}} type="button">Hapus</button>
-            </div>
-      </td>
-    </tr>
-    <tr>
-      <td scope="row">Syalala</td>
-      <td style={{textAlign:"center"}}>6 Bulan</td>
-      <td style={{color:"green", textAlign:"center"}}>Aktif</td>
-      <td>
-            <div class="d-grid gap-1 d-md-flex justify-content-center " style={{height:"40px", alignContent:"center"}}>
-                      <Link to={'/Admin_lihatpelanggan'}><button class="btn btn-primary me-md-3" style={{borderRadius:"20px"}} type="button">Edit</button> </Link>
-                      <button class="btn btn-danger" style={{borderRadius:"20px"}} type="button">Hapus</button>
-            </div>
-      </td>
-      
-    </tr>
-    <tr>
-      <td scope="row">Intan</td>
-      <td style={{textAlign:"center"}}>6 Bulan</td>
-      <td style={{color:"red", textAlign:"center"}}>Kadaluarsa</td>
-      <td>
-            <div class="d-grid gap-1 d-md-flex justify-content-center " style={{height:"40px", alignContent:"center"}}>
-                      <Link to={'/Admin_lihatpelanggan'}><button class="btn btn-primary me-md-3" style={{borderRadius:"20px"}} type="button">Edit</button> </Link>
-                      <button class="btn btn-danger" style={{borderRadius:"20px"}} type="button">Hapus</button>
-            </div>
-      </td>
-    </tr>
-    <tr>
-      <td scope="row">Syalala</td>
-      <td style={{textAlign:"center"}}>6 Bulan</td>
-      <td style={{color:"green", textAlign:"center"}}>Aktif</td>
-      <td>
-            <div class="d-grid gap-1 d-md-flex justify-content-center " style={{height:"40px", alignContent:"center"}}>
-                      <Link to={'/Admin_lihatpelanggan'}><button class="btn btn-primary me-md-3" style={{borderRadius:"20px"}} type="button">Edit</button> </Link>
-                      <button class="btn btn-danger" style={{borderRadius:"20px"}} type="button">Hapus</button>
-            </div>
-      </td>
-      
-    </tr>
-    <tr>
-      <td scope="row">Intan</td>
-      <td style={{textAlign:"center"}}>6 Bulan</td>
-      <td style={{color:"red", textAlign:"center"}}>Kadaluarsa</td>
-      <td>
-            <div class="d-grid gap-1 d-md-flex justify-content-center " style={{height:"40px", alignContent:"center"}}>
-                      <Link to={'/Admin_lihatpelanggan'}><button class="btn btn-primary me-md-3" style={{borderRadius:"20px"}} type="button">Edit</button> </Link>
-                      <button class="btn btn-danger" style={{borderRadius:"20px"}} type="button">Hapus</button>
-            </div>
-      </td>
-    </tr>
-    <tr>
-      <td scope="row">Syalala</td>
-      <td style={{textAlign:"center"}}>6 Bulan</td>
-      <td style={{color:"green", textAlign:"center"}}>Aktif</td>
-      <td>
-            <div class="d-grid gap-1 d-md-flex justify-content-center " style={{height:"40px", alignContent:"center"}}>
-                      <Link to={'/Admin_lihatpelanggan'}><button class="btn btn-primary me-md-3" style={{borderRadius:"20px"}} type="button">Edit</button> </Link>
-                      <button class="btn btn-danger" style={{borderRadius:"20px"}} type="button">Hapus</button>
-            </div>
-      </td>
-      
-    </tr>
-    <tr>
-      <td scope="row">Intan</td>
-      <td style={{textAlign:"center"}}>6 Bulan</td>
-      <td style={{color:"red", textAlign:"center"}}>Kadaluarsa</td>
-      <td>
-            <div class="d-grid gap-1 d-md-flex justify-content-center " style={{height:"40px", alignContent:"center"}}>
-                      <Link to={'/Admin_lihatpelanggan'}><button class="btn btn-primary me-md-3" style={{borderRadius:"20px"}} type="button">Edit</button> </Link>
-                      <button class="btn btn-danger" style={{borderRadius:"20px"}} type="button">Hapus</button>
-            </div>
-      </td>
-    </tr>
+
   </tbody>
 </table>
 <VerificationBox/>

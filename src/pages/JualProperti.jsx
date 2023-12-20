@@ -163,7 +163,7 @@ function JualProperti() {
                 </Container>
                 <Container className="d-flex justify-content-end">
                   <button
-                    type="submit"
+                    type="button"
                     className="mx-3 px-3 py-2 my-5 text-light text-center rounded-2 fw-bold"
                     style={{ backgroundColor: "#5B4533" }}
                   >
@@ -206,8 +206,8 @@ function JualProperti() {
       </div>
     </div>
        </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
+  <div class="accordion-item" >
+    <h2 class="accordion-header" >
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
        <strong>Berapa lama rentang waktu verifikasi ?</strong>
       </button>

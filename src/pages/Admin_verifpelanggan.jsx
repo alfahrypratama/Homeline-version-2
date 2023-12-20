@@ -1,13 +1,10 @@
 import React from 'react';
 
-
 import { Card, Col, Container, FormSelect, Row } from "react-bootstrap";
 import NavbarallAdmin from '../components/NavbarallAdmin';
 import Sidebar from '../components/Sidebar';
 
-
-
-function Verifnotaris () {
+function Verifpelanggan() {
     return (
         <>
         <NavbarallAdmin/>
@@ -16,111 +13,128 @@ function Verifnotaris () {
             <div>
             <Sidebar/>
             </div>
-          <div style={{width:"900px"}}>
+            <div style={{width:"900px"}}>
           <Col className="col-12">
             <Card className="p-3 d-flex flex-column gap-3">
-              <h3 className="fw-bold">Notaris</h3>
+              <h3 className="fw-bold">Verifikasi</h3>
               <form action="">
-                <div >
-                    <img src="\public\image\notaris.png" alt="" style={{width: "400px"}}/>
-                </div>
                   <div className="mt-3">
                     <label htmlFor="nama" className="form-label fw-bold">
-                      Nama Notaris
+                      Nama Rumah 
                     </label>
                     <input
                       type="text"
                       className="form-control"
                       id="nama"
-                      placeholder="Syalala"
+                      placeholder=""
                     />
                   </div>
                   <div className="mt-3">
-                    <label htmlFor="email" className="form-label fw-bold">
-                      Email
+                    <label htmlFor="Domisili" className="form-label fw-bold">
+                      Alamat
                     </label>
                     <input
-                      type="email"
+                      type="text"
                       className="form-control"
-                      id="email"
-                      placeholder="syalala@gmail.com"
+                      id="Domisili "
+                      placeholder=""
                     />
                   </div>
                   <div className="mt-3">
                     <label htmlFor="no" className="form-label fw-bold">
-                      Nomor Telepon
+                      Masukkan Link G-Maps 
                     </label>
                     <input
                       type="text"
                       className="form-control"
                       id="no"
-                      placeholder="0293192090228"
+                      placeholder=""
                     />
                   </div>
                   <div className="mt-3">
-                    <label htmlFor="domisili" className="form-label fw-bold">
-                      Domisili
+                    <label htmlFor="nama" className="form-label fw-bold">
+                    Jenis Sertifikat
                     </label>
                     <input
                       type="text"
                       className="form-control"
-                      id="domisili"
-                      placeholder="Surabaya"
+                      id="nama"
+                      placeholder=""
                     />
                   </div>
                   <div className="mt-3">
-                    <label htmlFor="bio" className="form-label fw-bold">
-                      Bio
+                    <label htmlFor="angka" className="form-label fw-bold">
+                      Luas Lahan/Tanah
                     </label>
                     <input
                       type="text-area"
                       className="form-control"
-                      id="bio"
-                      placeholder="Tuliskan disini"
+                      id="angka"
+                      placeholder=""
                     />
                   </div>
                   <div className="mt-3">
-                    <label
-                      htmlFor="linkedin"
-                      className="form-label fw-bold"
-                    >
-                      Link Linkedin
+                    <label htmlFor="angka" className="form-label fw-bold">
+                      Luas Bangunan 
                     </label>
                     <input
-                      type="text"
+                      type="text-area"
                       className="form-control"
-                      id="linkedin"
-                      placeholder="Linkedin.com"
+                      id="angka"
+                      placeholder=""
                     />
                   </div>
                   <div className="mt-3">
-                    <label
-                      htmlFor="linkedin"
-                      className="form-label fw-bold"
-                    >
-                      Link Portofolio
+                    <label htmlFor="angka" className="form-label fw-bold">
+                      Listrik (Watt)
                     </label>
                     <input
-                      type="text"
+                      type="text-area"
                       className="form-control"
-                      id="porto"
-                      placeholder="portofolio.com"
+                      id="angka"
+                      placeholder=""
                     />
                   </div>
-                  
                   <div className="mt-3">
-                    <label htmlFor="file" className="form-label fw-bold">
-                      Dokumen Tambahan
+                    <label htmlFor="angka" className="form-label fw-bold">
+                      Harga per m2
                     </label>
-                    <input className="form-control" type="file" id="file" />
+                    <input
+                      type="text-area"
+                      className="form-control"
+                      id="angka"
+                      placeholder=""
+                    />
+                  </div>
+                  <div className="mt-3">
+                    <label htmlFor="nama" className="form-label fw-bold">
+                      Deskripsi Propertimu 
+                    </label>
+                    <input
+                      type="text-area"
+                      className="form-control"
+                      id="nama"
+                      placeholder=""
+                    />
+                  </div>
+                  <div className="mt-3">
+                    <label htmlFor="angka" className="form-label fw-bold">
+                      Foto 
+                    </label>
+                    <input
+                      type="text-area"
+                      className="form-control"
+                      id="angka"
+                      placeholder=""
+                    />
                   </div>
 
-                
-                    <div className="d-flex justify-content-end">
+  
+                   <div className="d-flex justify-content-end">
   <button
     type="submit"
     className="mx-3 px-3 py-2 my-5 text-light text-center fw-bold"
-    style={{ backgroundColor: "#F2364C", borderRadius:"0px 10px 10px 10px", width:"150px"}}
+    style={{ backgroundColor: "#5B4533", borderRadius:"0px 10px 10px 10px", width:"150px"}}
   >
     Tidak setujui 
   </button>
@@ -131,7 +145,7 @@ function Verifnotaris () {
   >
    
 
-      setujui 
+      Setujui 
     </button>
   </div>
               </form>
@@ -144,4 +158,4 @@ function Verifnotaris () {
         </>
     );
 }
-export default Verifnotaris;
+export default Verifpelanggan;

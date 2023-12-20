@@ -15,18 +15,17 @@ const Admin_listpesanan = () => {
     <>
   <NavbarallAdmin />
 
-  <div className="container mt-5">
-    <div className="row">
-      <div className="col-md-3">
-        <Sidebar />
-      </div>
+  <div style={{ display:'flex', justifyContent:'center', paddingTop:"30px"}}>
+            <div>
+            <Sidebar/>
+            </div>
+            <div style={{width:"900px"}}>
 
-      <div className="col-md-9">
+      <div className="col-md-12">
         <div className="ml-4">
-          <p className="text-success fs-4 display-4">List Pesanan Property</p>
+          <h3>List Pesanan Property</h3>
 
-          <div className="row mt-2">
-            {/* Kolom 1 */}
+          {/* <div className="row mt-2">
             <div className="col-md-3">
               <div className="h-60 p-4 mx-2 bg-white border rounded-lg shadow-md">
                 <p className="text-success font-weight-bold">Pelanggan</p>
@@ -39,7 +38,6 @@ const Admin_listpesanan = () => {
               </div>
             </div>
 
-            {/* Kolom 2 */}
             <div className="col-md-3">
               <div className="h-60 p-4 mx-2 bg-white border rounded-lg shadow-md">
                 <p className="text-black font-weight-bold">Pelanggan</p>
@@ -52,7 +50,7 @@ const Admin_listpesanan = () => {
               </div>
             </div>
 
-            {/* Kolom 3 */}
+
             <div className="col-md-3">
               <div className="h-60 p-4 mx-2 bg-white border rounded-lg shadow-md">
                 <p className="text-black font-weight-bold">Pelanggan</p>
@@ -65,7 +63,7 @@ const Admin_listpesanan = () => {
               </div>
             </div>
 
-            {/* Kolom 4 */}
+
             <div className="col-md-3">
               <div className="h-60 p-4 mx-2 bg-white border rounded-lg shadow-md">
                 <p className="text-black font-weight-bold">Pelanggan</p>
@@ -77,9 +75,9 @@ const Admin_listpesanan = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
-          <div className="my-5">
+          <div className="my-4">
             <Search />
             <PesananTable />
             <div className="d-flex justify-content-between align-items-center">

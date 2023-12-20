@@ -7,6 +7,8 @@ import Button from 'react-bootstrap/Button';
 
 import '../assets/style/ProfilAdmin.css';
 import NavbarAll from '../components/NavbarAll';
+import FooterAll from '../components/FooterAll';
+import { Container } from 'react-bootstrap';
 
 function Profil() {
   return (
@@ -71,13 +73,38 @@ function Profil() {
               </Form.Group>
 
               {/* Tambahkan tombol di sini */}
-              <Button variant="primary" className="float-right mb-2">
-                Simpan
-              </Button>
+              <Container className="d-flex justify-content-end">
+                  <button
+                    type="button"
+                    className="mx-3 px-3 py-2 my-5 text-light text-center rounded-2 fw-bold"
+                    style={{ backgroundColor: "#5B4533" }}
+                  >
+                    Simpan
+                  </button>
+                </Container>
             </Form>
           </Card.Body>
         </Card>
       </div>
+      <div style={{ display: 'flex', justifyContent: 'center', paddingTop: '30px' }}>
+      <div class="card" style={{ width: '900px' }}>
+        <h5 class="card-header">Status Jual Rumah</h5>
+        <div class="card-body">
+          <p class="card-text" style={{color:'brown'}}>verifikasi data</p>
+        </div>
+      </div>
+      </div>
+      <div style={{ display: 'flex', justifyContent: 'center', paddingTop: '30px' }}>
+      <div class="card" style={{ width: '900px' }}>
+        <h5 class="card-header">Status Daftar Notaris</h5>
+        <div class="card-body">
+          <p class="card-text" style={{color:'brown'}}>-</p>
+        </div>
+      </div>
+      </div>
+      <br /><br />
+
+    <FooterAll/>
     </>
   );
 }

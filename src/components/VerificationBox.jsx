@@ -1,18 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const VerificationBox = () => {
   return (
-    <div className="border bg-white p-3 mb-3 ml-10 mt-12 " style={{ width: '35%' }}>
+    <div className="border bg-white p-3 mb-3 ml- mt-12 " style={{ width: '30%' }}>
       <div className='col-md-6 offset-md-3 text-center'>
-        <p className='text-center'>Perlu Verifikasi</p></div>
+        <b className='text-center'>Perlu Verifikasi</b></div>
       <div className="d-flex justify-content-between">
         <div>
           <p>Teks Pertama</p>
         </div>
         <div>
-          <a href="#" onClick={(e) => e.preventDefault()}>
-            Lihat Detail
-          </a>
+          <Link to={'/Verifnotaris'}>
+          Detail
+          </Link>
         </div>
       </div>
       <hr className="my-2" />
@@ -21,110 +22,12 @@ const VerificationBox = () => {
           <p>Teks Pertama</p>
         </div>
         <div>
-          <a href="#" onClick={(e) => e.preventDefault()}>
-            Lihat Detail
-          </a>
+          <Link to={'/Verifnotaris'}>
+          Detail
+          </Link>
         </div>
       </div>
-      <hr className="my-2" />
-      <div className="d-flex justify-content-between">
-        <div>
-          <p>Teks Pertama</p>
-        </div>
-        <div>
-          <a href="#" onClick={(e) => e.preventDefault()}>
-            Lihat Detail
-          </a>
-        </div>
-      </div>
-      <hr className="my-2" />
-      <div className="d-flex justify-content-between">
-        <div>
-          <p>Teks Pertama</p>
-        </div>
-        <div>
-          <a href="#" onClick={(e) => e.preventDefault()}>
-            Lihat Detail
-          </a>
-        </div>
-      </div>
-      <hr className="my-2" />
-      <div className="d-flex justify-content-between">
-        <div>
-          <p>Teks Pertama</p>
-        </div>
-        <div>
-          <a href="#" onClick={(e) => e.preventDefault()}>
-            Lihat Detail
-          </a>
-        </div>
-      </div>
-      <hr className="my-2" />
-      <div className="d-flex justify-content-between">
-        <div>
-          <p>Teks Pertama</p>
-        </div>
-        <div>
-          <a href="#" onClick={(e) => e.preventDefault()}>
-            Lihat Detail
-          </a>
-        </div>
-      </div>
-      <hr className="my-2" />
-      <div className="d-flex justify-content-between">
-        <div>
-          <p>Teks Pertama</p>
-        </div>
-        <div>
-          <a href="#" onClick={(e) => e.preventDefault()}>
-            Lihat Detail
-          </a>
-        </div>
-      </div>
-      <hr className="my-2" />
-      <div className="d-flex justify-content-between">
-        <div>
-          <p>Teks Pertama</p>
-        </div>
-        <div>
-          <a href="#" onClick={(e) => e.preventDefault()}>
-            Lihat Detail
-          </a>
-        </div>
-      </div>
-      <hr className="my-2" />
-      <div className="d-flex justify-content-between">
-        <div>
-          <p>Teks Pertama</p>
-        </div>
-        <div>
-          <a href="#" onClick={(e) => e.preventDefault()}>
-            Lihat Detail
-          </a>
-        </div>
-      </div>
-      <hr className="my-2" />
-      <div className="d-flex justify-content-between">
-        <div>
-          <p>Teks Pertama</p>
-        </div>
-        <div>
-          <a href="#" onClick={(e) => e.preventDefault()}>
-            Lihat Detail
-          </a>
-        </div>
-      </div>
-      <hr className="my-2" />
-      <div className="d-flex justify-content-between">
-        <div>
-          <p>Teks Pertama</p>
-        </div>
-        <div>
-          <a href="#" onClick={(e) => e.preventDefault()}>
-            Lihat Detail
-          </a>
-        </div>
-      </div>
+
       <hr className="my-2" />
     </div>
     

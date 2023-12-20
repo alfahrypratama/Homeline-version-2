@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const PesananTable = () => {
   const tableData = [
@@ -31,10 +32,15 @@ const PesananTable = () => {
             <td>{item.id}</td>
             <td>{item.name}</td>
             <td>{item.age}</td>
-            <td>{item.city}</td>
+            <td>
+              {/* Tambahkan link ke halaman detail di sini */}
+              <Link to={`/details/${item.id}`}>Details</Link>
+
+            </td>
           </tr>
         ))}
       </tbody>
+
     </table>
   );
 };
