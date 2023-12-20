@@ -5,90 +5,81 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 
-
 import '../assets/style/ProfilAdmin.css';
-import Sidebar from '../components/Sidebar';
 import NavbarAll from '../components/NavbarAll';
-
 
 function Profil() {
   return (
     <>
-    <NavbarAll/>
-    <div style={{ display:'flex', justifyContent:'center', paddingTop:"30px"}}>
-      
-    <Card className="d-flex justify-content-center " style={{ paddingTop:"50px", width:"900px" }}>
-      <Card.Body>
-        <Row className="mb-3" >
-          <Col sm="col-12">
-            <h4>Foto Profil</h4>
-            <img
-              src="/images/avatar.png"
-              alt="Avatar"
-              style={{ width: '188px', borderRadius: '1%' }}
-            />
-            <h4>edit Profil</h4>
-          </Col>
-          <Col sm="10">
-            {/* Bacaan "Foto Profil" */}
-          </Col>
-        </Row>
-        <Form>
-          <Form.Group as={Row} className="mb-3 d-flex" controlId="formPlaintextEmail">
-            <Form.Label column sm="1">
-              Nama
-            </Form.Label>
-            <Col sm="3">
-              <Form.Control type="text" placeholder="Set nama" />
-            </Col>
-          </Form.Group>
+      <NavbarAll />
+      <div style={{ display: 'flex', justifyContent: 'center', paddingTop: '30px' }}>
+        <Card className="d-flex" style={{ paddingTop: '50px', width: '900px' }}>
+          <Card.Body className="d-flex">
+            <div className="mx-4">
+              <h4 className='text-center'>Foto Profil</h4>
+              <img
+                src="/images/avatar.png"
+                alt="Avatar"
+                style={{ width: '188px', borderRadius: '1%' }}
+              />
+              <p className='text-center'>Edit Profil</p>
+            </div>
+            <Form style={{ width: '100%' }}>
+              <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
+                <Form.Label column sm="2">
+                  Nama
+                </Form.Label>
+                <Col sm="10">
+                  <Form.Control type="text" placeholder="Set nama" />
+                </Col>
+              </Form.Group>
 
-          <Form.Group as={Row} className="mb-3 d-flex" controlId="formPlaintextPassword">
-            <Form.Label column sm="1">
-              Email
-            </Form.Label>
-            <Col sm="3">
-              <Form.Control type="email" placeholder="Enter email" />
-            </Col>
-          </Form.Group>
+              <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
+                <Form.Label column sm="2">
+                  Email
+                </Form.Label>
+                <Col sm="10">
+                  <Form.Control type="email" placeholder="Enter email" />
+                </Col>
+              </Form.Group>
 
-          <Form.Group as={Row} className="mb-3 d-flex" controlId="formPlaintextPassword">
-            <Form.Label column sm="1">
-              Kata sandi
-            </Form.Label>
-            <Col sm="3">
-              <Form.Control type="password" placeholder="Enter sandi" />
-            </Col>
-          </Form.Group>
+              <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
+                <Form.Label column sm="2">
+                  Kata sandi
+                </Form.Label>
+                <Col sm="10">
+                  <Form.Control type="password" placeholder="Enter sandi" />
+                </Col>
+              </Form.Group>
 
-          <Form.Group as={Row} className="mb-3 d-flex" controlId="formPlaintextPassword">
-            <Form.Label column sm="1">
-              NO. telepon
-            </Form.Label>
-            <Col sm="3">
-              <Form.Control type="tel" placeholder="Enter telepon" />
-            </Col>
-          </Form.Group>
+              <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
+                <Form.Label column sm="2">
+                  NO. telepon
+                </Form.Label>
+                <Col sm="10">
+                  <Form.Control type="tel" placeholder="Enter telepon" />
+                </Col>
+              </Form.Group>
 
-          <Form.Group as={Row} className="mb-3 d-flex" controlId="formPlaintextPassword">
-            <Form.Label column sm="1">
-              Alamat
-            </Form.Label>
-            <Col sm="3">
-              <Form.Control type="text" placeholder="Enter alamat" />
-            </Col>
-          </Form.Group>
+              <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
+                <Form.Label column sm="2">
+                  Alamat
+                </Form.Label>
+                <Col sm="10">
+                  <Form.Control type="text" placeholder="Enter alamat" />
+                </Col>
+              </Form.Group>
 
-          {/* Tambahkan tombol di sini */}
-          <Button variant="primary" className="float-right mb-2">
-            Simpan
-          </Button>
-        </Form>
-      </Card.Body>
-    </Card>
-    </div>
+              {/* Tambahkan tombol di sini */}
+              <Button variant="primary" className="float-right mb-2">
+                Simpan
+              </Button>
+            </Form>
+          </Card.Body>
+        </Card>
+      </div>
     </>
   );
 }
 
-export default  Profil;
+export default Profil;

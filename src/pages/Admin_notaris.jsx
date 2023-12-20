@@ -1,39 +1,165 @@
-import React from "react";
-import Layoutadmin from "./Layoutadmin";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import React from 'react'
+import { Button, Container, Nav } from 'react-bootstrap';
+import CardBlog from '../components/CardBlog';
+import FooterAll from '../components/FooterAll';
+import NavbarallAdmin from '../components/NavbarallAdmin';
+import Sidebar from '../components/Sidebar';
+import Search from '../components/search';
+import { Link } from 'react-router-dom';
+import VerificationBox from '../components/VerificationBox';
 
-const Admin_notaris = () => {
+
+
+function Admin_notaris() {
   return (
-    <Layoutadmin>
-<div className="flex mt-8">
-        <div className="bg-[#C8BFB8] h-[1100px] w-64 ml-4 rounded-tl-3xl">
-           {/* Daftar menu atau navigasi */}
-           <ul className="text-white text-[#4C4C4C]">
-  <li className="p-4 hover:bg-[#FFFFFF] cursor-pointer active-menu">
-    <a href="./Admindashboard">Dashboard</a>
-  </li>
-  <li className="p-4 hover:bg-[#FFFFFF] cursor-pointer">
-    <a href="./Adminlistpesanan">List Pesanan</a>
-  </li>
-  <li className="p-4 hover:bg-[#FFFFFF] cursor-pointer">
-    <a href="./Adminpelanggan">Pelanggan</a>
-  </li>
-  <li className="p-4 hover:bg-[#FFFFFF] cursor-pointer">
-    <a href="./Adminnotaris">Notaris</a>
-  </li>
-  <li className="p-4 hover:bg-[#FFFFFF] cursor-pointer">
-    <a href="./Adminpostblog">Post Blog</a>
-  </li>
-  <li className="p-4 hover:bg-[#FFFFFF] cursor-pointer">
-    <a href="./Adminblog">Blog</a>
-  </li>
-  {/* Tambahkan lebih banyak menu sesuai kebutuhan */}
-</ul>
-</div> 
-      </div>
-    </Layoutadmin>
-  );
-};
+    <>
+      <NavbarallAdmin/>
+    <div style={{ display:'flex', justifyContent:'center', paddingTop:"50px"}}>
+        <div>
+            <Sidebar/>
+        </div>
+        <br />
+        <div style={{width:"900px"}}>
+       <h3>Notaris</h3>
+       <Search/> <br />
+       <div className='d-flex'>
+       <table class="table mx-2 " style={{ width: '65%' }}>
+  <thead>
+    <tr style={{textAlign:"center"}}>
+      <th scope="col">Nama</th>
+      <th scope="col" >Paket Pelanggan</th>
+      <th scope="col">Status</th>
+      <th scope="col">Aksi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row">Syalala</td>
+      <td style={{textAlign:"center"}}>6 Bulan</td>
+      <td style={{color:"green", textAlign:"center"}}>Aktif</td>
+      <td>
+            <div class="d-grid gap-1 d-md-flex justify-content-center " style={{height:"40px", alignContent:"center"}}>
+                      <Link to={'/Admin_lihatpelanggan'}><button class="btn btn-primary me-md-3" style={{borderRadius:"20px"}} type="button">Edit</button> </Link>
+                      <button class="btn btn-danger" style={{borderRadius:"20px"}} type="button">Hapus</button>
+            </div>
+      </td>
+      
+    </tr>
+    <tr>
+      <td scope="row">Intan</td>
+      <td style={{textAlign:"center"}}>6 Bulan</td>
+      <td style={{color:"red", textAlign:"center"}}>Kadaluarsa</td>
+      <td>
+            <div class="d-grid gap-1 d-md-flex justify-content-center " style={{height:"40px", alignContent:"center"}}>
+                      <Link to={'/Admin_lihatpelanggan'}><button class="btn btn-primary me-md-3" style={{borderRadius:"20px"}} type="button">Edit</button> </Link>
+                      <button class="btn btn-danger" style={{borderRadius:"20px"}} type="button">Hapus</button>
+            </div>
+      </td>
+    </tr>
+    <tr>
+      <td scope="row">Syalala</td>
+      <td style={{textAlign:"center"}}>6 Bulan</td>
+      <td style={{color:"green", textAlign:"center"}}>Aktif</td>
+      <td>
+            <div class="d-grid gap-1 d-md-flex justify-content-center " style={{height:"40px", alignContent:"center"}}>
+                      <Link to={'/Admin_lihatpelanggan'}><button class="btn btn-primary me-md-3" style={{borderRadius:"20px"}} type="button">Edit</button> </Link>
+                      <button class="btn btn-danger" style={{borderRadius:"20px"}} type="button">Hapus</button>
+            </div>
+      </td>
+      
+    </tr>
+    <tr>
+      <td scope="row">Intan</td>
+      <td style={{textAlign:"center"}}>6 Bulan</td>
+      <td style={{color:"red", textAlign:"center"}}>Kadaluarsa</td>
+      <td>
+            <div class="d-grid gap-1 d-md-flex justify-content-center " style={{height:"40px", alignContent:"center"}}>
+                      <Link to={'/Admin_lihatpelanggan'}><button class="btn btn-primary me-md-3" style={{borderRadius:"20px"}} type="button">Edit</button> </Link>
+                      <button class="btn btn-danger" style={{borderRadius:"20px"}} type="button">Hapus</button>
+            </div>
+      </td>
+    </tr>
+    <tr>
+      <td scope="row">Syalala</td>
+      <td style={{textAlign:"center"}}>6 Bulan</td>
+      <td style={{color:"green", textAlign:"center"}}>Aktif</td>
+      <td>
+            <div class="d-grid gap-1 d-md-flex justify-content-center " style={{height:"40px", alignContent:"center"}}>
+                      <Link to={'/Admin_lihatpelanggan'}><button class="btn btn-primary me-md-3" style={{borderRadius:"20px"}} type="button">Edit</button> </Link>
+                      <button class="btn btn-danger" style={{borderRadius:"20px"}} type="button">Hapus</button>
+            </div>
+      </td>
+      
+    </tr>
+    <tr>
+      <td scope="row">Intan</td>
+      <td style={{textAlign:"center"}}>6 Bulan</td>
+      <td style={{color:"red", textAlign:"center"}}>Kadaluarsa</td>
+      <td>
+            <div class="d-grid gap-1 d-md-flex justify-content-center " style={{height:"40px", alignContent:"center"}}>
+                      <Link to={'/Admin_lihatpelanggan'}><button class="btn btn-primary me-md-3" style={{borderRadius:"20px"}} type="button">Edit</button> </Link>
+                      <button class="btn btn-danger" style={{borderRadius:"20px"}} type="button">Hapus</button>
+            </div>
+      </td>
+    </tr>
+    <tr>
+      <td scope="row">Syalala</td>
+      <td style={{textAlign:"center"}}>6 Bulan</td>
+      <td style={{color:"green", textAlign:"center"}}>Aktif</td>
+      <td>
+            <div class="d-grid gap-1 d-md-flex justify-content-center " style={{height:"40px", alignContent:"center"}}>
+                      <Link to={'/Admin_lihatpelanggan'}><button class="btn btn-primary me-md-3" style={{borderRadius:"20px"}} type="button">Edit</button> </Link>
+                      <button class="btn btn-danger" style={{borderRadius:"20px"}} type="button">Hapus</button>
+            </div>
+      </td>
+      
+    </tr>
+    <tr>
+      <td scope="row">Intan</td>
+      <td style={{textAlign:"center"}}>6 Bulan</td>
+      <td style={{color:"red", textAlign:"center"}}>Kadaluarsa</td>
+      <td>
+            <div class="d-grid gap-1 d-md-flex justify-content-center " style={{height:"40px", alignContent:"center"}}>
+                      <Link to={'/Admin_lihatpelanggan'}><button class="btn btn-primary me-md-3" style={{borderRadius:"20px"}} type="button">Edit</button> </Link>
+                      <button class="btn btn-danger" style={{borderRadius:"20px"}} type="button">Hapus</button>
+            </div>
+      </td>
+    </tr>
+    <tr>
+      <td scope="row">Syalala</td>
+      <td style={{textAlign:"center"}}>6 Bulan</td>
+      <td style={{color:"green", textAlign:"center"}}>Aktif</td>
+      <td>
+            <div class="d-grid gap-1 d-md-flex justify-content-center " style={{height:"40px", alignContent:"center"}}>
+                      <Link to={'/Admin_lihatpelanggan'}><button class="btn btn-primary me-md-3" style={{borderRadius:"20px"}} type="button">Edit</button> </Link>
+                      <button class="btn btn-danger" style={{borderRadius:"20px"}} type="button">Hapus</button>
+            </div>
+      </td>
+      
+    </tr>
+    <tr>
+      <td scope="row">Intan</td>
+      <td style={{textAlign:"center"}}>6 Bulan</td>
+      <td style={{color:"red", textAlign:"center"}}>Kadaluarsa</td>
+      <td>
+            <div class="d-grid gap-1 d-md-flex justify-content-center " style={{height:"40px", alignContent:"center"}}>
+                      <Link to={'/Admin_lihatpelanggan'}><button class="btn btn-primary me-md-3" style={{borderRadius:"20px"}} type="button">Edit</button> </Link>
+                      <button class="btn btn-danger" style={{borderRadius:"20px"}} type="button">Hapus</button>
+            </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<VerificationBox/>
+</div>
+         
+        </div>
+      <br />
+      <br />
 
+      </div>
+    </>
+
+  );
+}
 export default Admin_notaris;

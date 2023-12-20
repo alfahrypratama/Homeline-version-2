@@ -15,7 +15,7 @@ import SearchBox from '../components/SearchBox';
 import BeforeFooter from '../components/BeforeFooter';
 import { Link } from 'react-router-dom';
 
-export default function Landingpage() {
+function Landingpage() {
     return (
         <>
             <Container className='mt-3 mb-3'>
@@ -103,5 +103,7 @@ export default function Landingpage() {
             
             <FooterAll />
         </>
-    )
-}
+    );
+};
+
+export default Landingpage;

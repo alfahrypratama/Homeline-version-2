@@ -1,5 +1,6 @@
 import React from "react";
 import Layoutadmin from "./Layoutadmin";
+import Sidebar from "../components/Sidebar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
@@ -7,31 +8,7 @@ const Admin_dashboard = () => {
   return (
     <Layoutadmin>
       <div className="flex mt-8">
-        <div className="bg-[#C8BFB8] h-[1100px] w-64 ml-4 rounded-tl-3xl">
-           {/* Daftar menu atau navigasi */}
-           <ul className="text-white text-[#4C4C4C]">
-  <li className="p-4 hover:bg-[#FFFFFF] cursor-pointer active-menu">
-    <a href="./Admindashboard">Dashboard</a>
-  </li>
-  <li className="p-4 hover:bg-[#FFFFFF] cursor-pointer">
-    <a href="./Adminlistpesanan">List Pesanan</a>
-  </li>
-  <li className="p-4 hover:bg-[#FFFFFF] cursor-pointer">
-    <a href="./Adminpelanggan">Pelanggan</a>
-  </li>
-  <li className="p-4 hover:bg-[#FFFFFF] cursor-pointer">
-    <a href="./Adminnotaris">Notaris</a>
-  </li>
-  <li className="p-4 hover:bg-[#FFFFFF] cursor-pointer">
-    <a href="./Adminpostblog">Post Blog</a>
-  </li>
-  <li className="p-4 hover:bg-[#FFFFFF] cursor-pointer">
-    <a href="./Adminblog">Blog</a>
-  </li>
-  {/* Tambahkan lebih banyak menu sesuai kebutuhan */}
-</ul>
-        </div>
-
+        <Sidebar/>
         {/* Teks di sebelah dan 5 box di bawah */}
         <div className="ml-10">
           <p className="text-[#464255] text-3xl">Dashboard</p>
@@ -112,6 +89,7 @@ const Admin_dashboard = () => {
               </div>
             </div>
           </div>
+
           <div className="mt-10">
             <p className="text-[#464255] text-3xl">Pendapatan</p>
             <div className="max-w-xl mt-8 bg-gray-100 rounded-lg shadow-md">

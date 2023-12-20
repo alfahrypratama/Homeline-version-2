@@ -42,7 +42,7 @@ const Sidebar = () => {
                 <div className="sidebarContainer">
                     <div className="sidebarItem">
                     <FontAwesomeIcon icon={faBuilding} />
-                    <Link to={'/'} style={{textDecoration:"none"}}>
+                    <Link to={'/Admin_notaris'} style={{textDecoration:"none"}}>
                         
                         <span className="sidebarTitle">Notaris</span>
                     </Link>

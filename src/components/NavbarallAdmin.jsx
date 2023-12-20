@@ -10,7 +10,7 @@ function NavbarallAdmin() {
           <Navbar className="">
             <Link to={'/homepage'} className='text-decoration-none'>
               <Navbar.Brand className="fw-bold">
-                <Image src='/images/Logo.png' className="w-50" />
+                <Image src='/images/Logo.png' className="w-80" />
                 Homeline
               </Navbar.Brand>
             </Link>
