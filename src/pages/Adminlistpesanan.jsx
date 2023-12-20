@@ -27,7 +27,7 @@ const Adminlistpesanan = () => {
 
               {/* Dua teks bersebelahan di bawah box */}
               <div className="flex justify-between">
-                <p className="text-xl text-black font-bold">12</p>
+                <p className="text-xl text-black font-bold">120</p>
                 <p className="text-sm text-black">Butuh Verifikasi</p>
               </div>
             </div>
@@ -42,8 +42,8 @@ const Adminlistpesanan = () => {
 
               {/* Dua teks bersebelahan di bawah box */}
               <div className="flex justify-between">
-                <p className="text-xl text-black font-bold">12</p>
-                <p className="text-sm text-black">Butuh Verifikasi</p>
+                <p className="text-xl text-black font-bold">20</p>
+                <p className="text-sm text-black">Terverifikasi</p>
               </div>
             </div>
             <div className="w-xl h-60 mx-2 p-4 bg-white border rounded-lg shadow-md">
@@ -57,8 +57,8 @@ const Adminlistpesanan = () => {
 
               {/* Dua teks bersebelahan di bawah box */}
               <div className="flex justify-between">
-                <p className="text-xl text-black font-bold">12</p>
-                <p className="text-sm text-black">Butuh Verifikasi</p>
+                <p className="text-xl text-black font-bold">20</p>
+                <p className="text-sm text-black">Terjual</p>
               </div>
             </div>
             <div className="w-xl h-60 mx-2 p-4 bg-white border rounded-lg shadow-md">
@@ -72,8 +72,8 @@ const Adminlistpesanan = () => {
 
               {/* Dua teks bersebelahan di bawah box */}
               <div className="flex justify-between">
-                <p className="text-xl text-black font-bold">12</p>
-                <p className="text-sm text-black">Butuh Verifikasi</p>
+                <p className="text-xl text-black font-bold">08</p>
+                <p className="text-sm text-black">gagal</p>
               </div>
             
 

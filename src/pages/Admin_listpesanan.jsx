@@ -13,95 +13,86 @@ import Search from "../components/search";
 const Admin_listpesanan = () => {
   return (
     <>
-    <NavbarallAdmin/>
-    <div style={{ display:'flex', justifyContent:'center', paddingTop:"50px"}}>
-        <div>
-        <Sidebar/>
-        </div>
-        <div style={{width:"900px"}}>
+  <NavbarallAdmin />
 
-      <div className="ml-10">
-          <p className="text-[#464255] text-3xl">Dashboard</p>
-          <div className="flex mt-2">
-            <div className="w-xl h-60 mx-2 p-4 bg-white border rounded-lg shadow-md">
-              {/* Teks di dalam box */}
-              <p className="text-sm mb-2 font-semibold text-[#009020]">
-                Pelanggan
-              </p>
+  <div className="container mt-5">
+    <div className="row">
+      <div className="col-md-3">
+        <Sidebar />
+      </div>
 
-              {/* Box */}
-              <div className="bg-[#D9D9D9] w-40 h-32 rounded mb-4"></div>
+      <div className="col-md-9">
+        <div className="ml-4">
+          <p className="text-success fs-4 display-4">List Pesanan Property</p>
 
-              {/* Dua teks bersebelahan di bawah box */}
-              <div className="flex justify-between">
-                <p className="text-xl text-black font-bold">12</p>
-                <p className="text-sm text-black">Butuh Verifikasi</p>
+          <div className="row mt-2">
+            {/* Kolom 1 */}
+            <div className="col-md-3">
+              <div className="h-60 p-4 mx-2 bg-white border rounded-lg shadow-md">
+                <p className="text-success font-weight-bold">Pelanggan</p>
+                <div className="p-4 bg-light border rounded-lg shadow-md"></div>
+                <div className="bg-secondary w-40 h-32 rounded mb-4"></div>
+                <div className="d-flex justify-content-between">
+                  <p className="fs-1 text-success font-weight-bold mr-2">120</p>
+                  <p className="text-sm m-2 text-success">Butuh Verifikasi</p>
+                </div>
               </div>
             </div>
-            <div className="w-xl h-60 mx-2 p-4 bg-white border rounded-lg shadow-md">
-              {/* Teks di dalam box */}
-              <p className="text-sm mb-2 font-semibold text-[#009020]">
-                Pelanggan
-              </p>
 
-              {/* Box */}
-              <div className="bg-[#D9D9D9] w-40 h-32 rounded mb-4"></div>
-
-              {/* Dua teks bersebelahan di bawah box */}
-              <div className="flex justify-between">
-                <p className="text-xl text-black font-bold">12</p>
-                <p className="text-sm text-black">Butuh Verifikasi</p>
+            {/* Kolom 2 */}
+            <div className="col-md-3">
+              <div className="h-60 p-4 mx-2 bg-white border rounded-lg shadow-md">
+                <p className="text-black font-weight-bold">Pelanggan</p>
+                <div className="p-4 bg-light border rounded-lg shadow-md"></div>
+                <div className="bg-secondary w-40 h-32 rounded mb-4"></div>
+                <div className="d-flex justify-content-between">
+                  <p className="fs-1 text-black font-weight-bold mr-2">120</p>
+                  <p className="text-sm m-2 text-black">Butuh Verifikasi</p>
+                </div>
               </div>
             </div>
-            <div className="w-xl h-60 mx-2 p-4 bg-white border rounded-lg shadow-md">
-              {/* Teks di dalam box */}
-              <p className="text-sm mb-2 font-semibold text-[#009020]">
-                Pelanggan
-              </p>
 
-              {/* Box */}
-              <div className="bg-[#D9D9D9] w-40 h-32 rounded mb-4"></div>
-
-              {/* Dua teks bersebelahan di bawah box */}
-              <div className="flex justify-between">
-                <p className="text-xl text-black font-bold">12</p>
-                <p className="text-sm text-black">Butuh Verifikasi</p>
+            {/* Kolom 3 */}
+            <div className="col-md-3">
+              <div className="h-60 p-4 mx-2 bg-white border rounded-lg shadow-md">
+                <p className="text-black font-weight-bold">Pelanggan</p>
+                <div className="p-4 bg-light border rounded-lg shadow-md"></div>
+                <div className="bg-secondary w-40 h-32 rounded mb-4"></div>
+                <div className="d-flex justify-content-between">
+                  <p className="fs-1 text-black font-weight-bold mr-2">120</p>
+                  <p className="text-sm m-2 text-black">Butuh Verifikasi</p>
+                </div>
               </div>
             </div>
-            <div className="w-xl h-60 mx-2 p-4 bg-white border rounded-lg shadow-md">
-              {/* Teks di dalam box */}
-              <p className="text-sm mb-2 font-semibold text-[#009020]">
-                Pelanggan
-              </p>
 
-              {/* Box */}
-              <div className="bg-[#D9D9D9] w-40 h-32 rounded mb-4"></div>
-
-              {/* Dua teks bersebelahan di bawah box */}
-              <div className="flex justify-between">
-                <p className="text-xl text-black font-bold">12</p>
-                <p className="text-sm text-black">Butuh Verifikasi</p>
+            {/* Kolom 4 */}
+            <div className="col-md-3">
+              <div className="h-60 p-4 mx-2 bg-white border rounded-lg shadow-md">
+                <p className="text-black font-weight-bold">Pelanggan</p>
+                <div className="p-4 bg-light border rounded-lg shadow-md"></div>
+                <div className="bg-secondary w-40 h-32 rounded mb-4"></div>
+                <div className="d-flex justify-content-between">
+                  <p className="fs-1 text-black font-weight-bold mr-2">120</p>
+                  <p className="text-sm m-2 text-black">Butuh Verifikasi</p>
+                </div>
               </div>
-            
-
-            
             </div>
-           
           </div>
+
           <div className="my-5">
-          <Search/>
-          <PesananTable/>
-          <div className="d-flex ">
-            <p>Menampilkan 1 dari 10 Halaman</p>
-            <Tombolnext/>
+            <Search />
+            <PesananTable />
+            <div className="d-flex justify-content-between align-items-center">
+              <p>Menampilkan 1 dari 10 Halaman</p>
+              <Tombolnext />
+            </div>
           </div>
-          </div>
-          </div>
-          
-
+        </div>
       </div>
     </div>
-    </>
+  </div>
+</>
+
   );
 }
 

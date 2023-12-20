@@ -27,6 +27,8 @@ import Adminlistpesanan from "./pages/Adminlistpesanan"
 import Admin_editblog from "./pages/Admin_editblog"
 import Admin_tambahblog from "./pages/Admin_tambahblog"
 import Listpesanangagal from "./pages/Listpesanangagal"
+import Admin_dashboard from "./pages/Admin_dashboard"
+import Admin_notaris from "./pages/Admin_notaris"
 
 
 
@@ -52,6 +54,8 @@ function App() {
       
       <Route path='/NotarisAdmin' element={<NotarisAdmin />}/>
       <Route path='/Verifnotaris' element={<Verifnotaris />}/>
+      <Route path='/Admin_dashboard' element={<Admin_dashboard />}/>
+      <Route path='/Admin_notaris' element={<Admin_notaris />}/>
       <Route path='/Admin_lihatpelanggan' element={<Admin_lihatpelanggan />}/>
       <Route path='/AdminProfil' element={<Admin_profil />}/>
       <Route path='/Admineditblog' element={<Admin_editblog />}/>

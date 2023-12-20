@@ -2,32 +2,32 @@ import React from 'react';
 
 const PesananTable = () => {
   const tableData = [
-    { id: 1, name: 'John Doe', age: 25, city: 'New York' },
-    { id: 2, name: 'Jane Smith', age: 30, city: 'Los Angeles' },
-    { id: 3, name: 'Bob Johnson', age: 28, city: 'Chicago' },
-    { id: 4, name: 'Alice Williams', age: 35, city: 'San Francisco' },
-    { id: 5, name: 'Charlie Brown', age: 22, city: 'Seattle' },
-    { id: 6, name: 'Diana Miller', age: 27, city: 'Miami' },
-    { id: 7, name: 'Elijah Davis', age: 32, city: 'Austin' },
-    { id: 8, name: 'Fiona Wilson', age: 29, city: 'Denver' },
-    { id: 9, name: 'Gary Lee', age: 31, city: 'Portland' },
-    { id: 10, name: 'Hannah Martin', age: 26, city: 'Phoenix' },
-    { id: 11, name: 'Isaac Clark', age: 33, city: 'Atlanta' },
+    { id: 2033091291920-0, name: 'John Doe', age: 'Tanah', city: 'Details' },
+    { id: 2033091291920-1, name: 'Jane Smith', age: 'Rumah', city: 'Details' },
+    { id: 2033091291920-2, name: 'Bob Johnson', age: 'ruko', city: 'Details' },
+    { id: 2033091291920-3, name: 'Alice Williams', age: 'rumah dan tanah', city: 'Details' },
+    { id: 2033091291920-4, name: 'Charlie Brown', age: 'ruko', city: 'Details' },
+    { id: 2033091291920-5, name: 'Diana Miller', age: 'kebun', city: 'Details' },
+    { id: 2033091291920-6, name: 'Elijah Davis', age: 'rumah dan tanah', city: 'Details' },
+    { id: 2033091291920-7, name: 'Fiona Wilson', age: 'ruko', city: 'Details' },
+    { id: 2033091291920-8, name: 'Gary Lee', age: 'rumah', city: 'Details' },
+    { id: 2033091291920-9, name: 'Hannah Martin', age: 'kebun', city: 'Details' },
+    { id: 2033091291920-10, name: 'Isaac Clark', age: 'rumah dan tanah', city: 'Details' },
   ];
 
   return (
     <table className="table border mt-5">
       <thead>
-        <tr>
-          <th>ID</th>
-          <th>Nama</th>
-          <th>Usia</th>
-          <th>Kota</th>
+        <tr className="table-header-row">
+          <th>Nama Katagori</th>
+          <th>Nama Pemohon</th>
+          <th>Jenis Property</th>
+          <th>Actions</th>
         </tr>
       </thead>
       <tbody>
-        {tableData.map(item => (
-          <tr key={item.id}>
+        {tableData.map((item, index) => (
+          <tr key={item.id} className={index === 0 ? 'highlighted-row' : ''}>
             <td>{item.id}</td>
             <td>{item.name}</td>
             <td>{item.age}</td>
