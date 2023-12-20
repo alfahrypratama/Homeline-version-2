@@ -33,12 +33,7 @@ function Admin_tambahblog() {
                     <label htmlFor="gambar" className="form-label fw-bold">
                       Pilih Gambar
                     </label>
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="gambar"
-                      placeholder="foto"
-                    />
+                    <input className="form-control" type="file" id="file" />
                   </div>
                   <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea">
                   < Form.Label className='fw-bold pt-3'>Isi Blog</Form.Label>

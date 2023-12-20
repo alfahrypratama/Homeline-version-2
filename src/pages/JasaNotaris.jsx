@@ -59,8 +59,8 @@ export default function JasaNotaris() {
                         <Nav className='fs-3 fw-bold'>Anda Seorang Notaris? <br /> Jangkau Lebih Banyak Klien di Homeline</Nav>
                     </Col>
                     <Col className=''>
-                        <Nav className='justify-content-center'>Daftar Disini</Nav>
-                        <Nav className='justify-content-center'>
+                        <Nav className='justify-content-center pb-1'>Daftar Disini</Nav>
+                        <Nav className='justify-content-center '>
                             <Link to={"/pendaftaran-notaris"} className='text-decoration-none fs-5 fw-semibold justify-content-center text-center align-items-center d-flex btn-daftar'>
                                 Daftar
                             </Link>

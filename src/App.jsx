@@ -23,12 +23,12 @@ import Admin_listpesanan from "./pages/Admin_listpesanan"
 import Admin_listpelanggan from "./pages/Admin_listpelanggan"
 import Pendaftarannotaris from "./pages/PendaftaranNotaris"
 import Profil from "./pages/Profil"
-import Adminlistpesanan from "./pages/Adminlistpesanan"
 import Admin_editblog from "./pages/Admin_editblog"
 import Admin_tambahblog from "./pages/Admin_tambahblog"
 import Listpesanangagal from "./pages/Listpesanangagal"
 import Admin_dashboard from "./pages/Admin_dashboard"
 import Admin_notaris from "./pages/Admin_notaris"
+import Verifpelanggan from "./pages/Admin_verifpelanggan"
 
 
 
@@ -42,6 +42,7 @@ function App() {
       <Route path="/auth/register" element={<Register />}/>
       <Route path="/contact-us" element={<ContactUs />}/>
       <Route path="/homepage" element={<Homepage />}/>
+      <Route path="/landingpage" element={<Landingpage />}/>
       <Route path="/detail" element={<PropertyDetail />}/>
       <Route path="/search-result" element={<SearchResult />}/>
       <Route path="/favorite" element={<Favorite />}/>
@@ -54,6 +55,7 @@ function App() {
       
       <Route path='/NotarisAdmin' element={<NotarisAdmin />}/>
       <Route path='/Verifnotaris' element={<Verifnotaris />}/>
+      <Route path='/Verifpelanggan' element={<Verifpelanggan />}/>
       <Route path='/Admin_dashboard' element={<Admin_dashboard />}/>
       <Route path='/Admin_notaris' element={<Admin_notaris />}/>
       <Route path='/Admin_lihatpelanggan' element={<Admin_lihatpelanggan />}/>
@@ -65,7 +67,6 @@ function App() {
       <Route path='/Admin_listpelanggan' element={<Admin_listpelanggan />}/>
       <Route path='/Admin_listpesanan' element={<Admin_listpesanan />}/>
       <Route path='/Admin_listpesanangagal' element={<Listpesanangagal />}/>
-      <Route path='/Adminlistpesanan' element={<Adminlistpesanan />}/>
 
     </Routes>
     </>

@@ -18,7 +18,7 @@ function NavbarallAdmin() {
               <Nav className="me-4">
                 {/* Tambahkan bagian gambar profil admin avatar di sini */}
                 <Nav.Link>
-                  <img
+                <img
                     src='/images/avatar.png'
                     alt='Admin Avatar'
                     roundedCircle
@@ -26,6 +26,8 @@ function NavbarallAdmin() {
                     style={{ width: '50px', height: '50px' }} /* Sesuaikan ukuran yang diinginkan */
                   />
                   <span className='ms-2 fw-semibold'>Admin</span>
+                  
+                  
                 </Nav.Link>
               </Nav>
             </Navbar.Collapse>

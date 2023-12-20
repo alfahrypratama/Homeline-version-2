@@ -63,7 +63,7 @@ export default function Register() {
                     </Container>
                     <AuthButton onClick={handleRegister} namaBtn='Daftar'/>
                     <div className='fw-medium'>
-                        Sudah punya akun? <Link to={'/login'} className='text-decoration-none font-accent'>Masuk</Link>
+                        Sudah punya akun? <Link to={'/auth/login'} className='text-decoration-none font-accent'>Masuk</Link>
                     </div>
                 </Col>
             </Row>
