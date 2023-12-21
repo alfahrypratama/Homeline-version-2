@@ -1,0 +1,38 @@
+import React, { useState } from 'react';
+import { Modal, Button} from "react-bootstrap";
+
+const Popupqris = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  return (
+    <>
+      <Button variant="primary" onClick={handleShow}>
+        Open QR Code Popup
+      </Button>
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>QR Code</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          {/* Include your QR Code component or content here */}
+          <img
+            src=""
+            alt=""
+            style={{ width: '100%', maxWidth: '300px', height: 'auto' }}
+          />
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </>
+  );
+}
+
+export default Popupqris;
